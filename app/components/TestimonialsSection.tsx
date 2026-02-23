@@ -1,90 +1,140 @@
-export default function TestimonialsSection() {
-  const testimonials = [
-    {
-      rating: 5,
-      review: "This app is perfect for my needs. I have been using it for a few years and it has not disappointed. The customer service is responsive and corrects the issue very quickly.",
-      author: "Gergo Kocsis",
-      avatar: "https://idownergo.com/wp-content/themes/idownergo/assets/img/index/person1.png",
-    },
-    {
-      rating: 5,
-      review: "Good software and good support. If you could also provide option to control download quality from sites other than YouTube, that will be great.",
-      author: "Vishnu Mohan",
-      avatar: "https://idownergo.com/wp-content/themes/idownergo/assets/img/index/person2.png",
-    },
-    {
-      rating: 5,
-      review: "Excellent product, works as intended. I love all the features, such as the ability to download in different formats and different levels of quality. I also love that it works with Spotify. This is exceptional software with frequent updates, so they are constantly improving it even more.",
-      author: "Bara Kunasaka",
-      avatar: "https://idownergo.com/wp-content/themes/idownergo/assets/img/index/person3.png",
-    },
-  ];
+"use client";
+
+import { useState } from "react";
+
+interface Testimonial {
+  quote: string;
+  name: string;
+  avatar: string;
+}
+
+interface TestimonialsSectionProps {
+  mainTitle: string;
+  testimonials: Testimonial[];
+  quotationMarksIcon?: string;
+  quotationMarksAlt?: string;
+  ratingIcon?: string;
+  ratingAlt?: string;
+  arrowIcon?: string;
+  arrowAlt?: string;
+  backgroundColor?: string;
+  defaultSlide?: number;
+}
+
+export default function TestimonialsSection({
+  mainTitle,
+  testimonials,
+  quotationMarksIcon = "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/quotation-marks-icon.svg",
+  quotationMarksAlt = "quotation marks icon",
+  ratingIcon = "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/five-star.svg",
+  ratingAlt = "five star",
+  arrowIcon = "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/white-arrow.svg",
+  arrowAlt = "arrow",
+  backgroundColor = "linear-gradient(180deg, #F4FCFF 0%, #F5FBFF 100%)",
+  defaultSlide = 0
+}: TestimonialsSectionProps) {
+  const [currentSlide, setCurrentSlide] = useState(defaultSlide);
+
+  const handlePrev = () => {
+    setCurrentSlide((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentSlide((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+  };
 
   return (
-    <section className="py-10 md:py-20 bg-white relative">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-no-repeat bg-cover opacity-50"
-        style={{
-          backgroundImage: "url('https://idownergo.com/wp-content/themes/idownergo/assets/img/index/circle-background2.png')",
-        }}
-      />
-      
-      <div className="container mx-auto max-w-[1310px] px-4 relative z-10">
-        {/* Title */}
-        <div className="text-center mb-10 md:mb-[60px]">
-          <h2 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold leading-tight text-black">
-            Good Reviews from Users Around the World
+    <section 
+      className="py-10 md:py-20"
+      style={{ background: backgroundColor }}
+    >
+      <div className="container max-w-[1310px] mx-auto px-4">
+        {/* 标题和导航 */}
+        <div className="flex flex-col lg:flex-row justify-between items-center">
+          <h2 className="font-bold text-[1.5rem]/[2rem] lg:text-[2.5rem]/[3rem] text-black lg:flex-1 text-center lg:text-left">
+            {mainTitle}
           </h2>
+
+          {/* 导航箭头 */}
+          <div className="lg:flex-1 flex items-center justify-end mt-5 lg:mt-0">
+            <button 
+              onClick={handlePrev}
+              className="w-[60px] h-[60px] mr-2.5 lg:mr-5 cursor-pointer bg-contain bg-no-repeat"
+              style={{ backgroundImage: `url('${arrowIcon}')` }}
+              aria-label={`Previous ${arrowAlt}`}
+            />
+            <button 
+              onClick={handleNext}
+              className="w-[60px] h-[60px] ml-2.5 lg:ml-5 cursor-pointer bg-contain bg-no-repeat transform rotate-180"
+              style={{ backgroundImage: `url('${arrowIcon}')` }}
+              aria-label={`Next ${arrowAlt}`}
+            />
+          </div>
         </div>
 
-        {/* Reviews Card */}
-        <div className="bg-white rounded-[20px] shadow-[0px_1px_4px_0px_rgba(234,156,236,0.5)] px-5 md:px-16 lg:px-[66px] pt-10 md:pt-[60px] pb-10 md:pb-12">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start text-center">
+        {/* 评价卡片轮播 */}
+        <div className="mt-5 lg:mt-15 overflow-hidden">
+          <div 
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          >
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="flex flex-col items-center flex-1">
-                {/* Stars */}
-                <div className="w-[166px] h-[30px]">
-                  <img
-                    src="https://idownergo.com/wp-content/themes/idownergo/assets/img/index/five-star-praise.svg"
-                    alt="five stars"
-                    className="w-full h-full"
-                  />
-                </div>
-
-                {/* Review Text */}
-                <p className="mt-5 text-[#333333] text-[14px] md:text-[16px] leading-5 md:leading-6 max-w-[293px]">
-                  "{testimonial.review}"
-                </p>
-
-                {/* Author */}
-                <div className="flex justify-center items-center mt-5">
-                  <img
-                    src={testimonial.avatar}
-                    alt={testimonial.author}
-                    className="w-11 h-11 rounded-full mr-2.5"
-                  />
-                  <p className="text-[#333333] text-[16px]">{testimonial.author}</p>
-                </div>
-
-                {/* Divider - only show between items on desktop */}
-                {index < testimonials.length - 1 && (
-                  <div className="w-full lg:w-auto">
-                    {/* Horizontal line for mobile */}
-                    <div className="h-[2px] w-full bg-gradient-to-r from-white via-[#F0F0F0] to-white my-6 lg:hidden" />
-                    {/* Vertical line for desktop */}
-                    <div className="hidden lg:block absolute top-0 bottom-0 w-[2px] bg-gradient-to-b from-white via-[#F0F0F0] to-white" 
-                         style={{ 
-                           left: `calc(${((index + 1) / testimonials.length) * 100}% - 1px)`,
-                           height: '200px',
-                           margin: 'auto 0'
-                         }} 
+              <div 
+                key={index}
+                className="min-w-full lg:min-w-[calc(50%-20px)] lg:max-w-[calc(50%-20px)] lg:mr-10 px-2"
+              >
+                <div className="bg-white shadow-[0px_1px_6px_0px_rgba(166,196,216,0.5)] rounded-[20px] py-5 lg:py-7.5 px-6 lg:px-10 h-full flex flex-col justify-between">
+                  {/* 评价内容 */}
+                  <div>
+                    <img 
+                      width="60" 
+                      height="60" 
+                      src={quotationMarksIcon} 
+                      alt={quotationMarksAlt}
                     />
+                    <p className="mt-3 lg:mt-5 lg:text-lg text-[#292929]">
+                      {testimonial.quote}
+                    </p>
                   </div>
-                )}
+
+                  {/* 用户信息 */}
+                  <div className="mt-5 lg:mt-7.5 border-t border-[#D8D8D8] pt-5 lg:pt-7.5 flex items-center">
+                    <img 
+                      width="54" 
+                      height="54" 
+                      src={testimonial.avatar} 
+                      alt={testimonial.name}
+                    />
+                    <div className="ml-3 lg:ml-5">
+                      <p className="lg:text-lg text-[#292929] lg:mb-2">
+                        {testimonial.name}
+                      </p>
+                      <img 
+                        width="168" 
+                        height="24" 
+                        src={ratingIcon} 
+                        alt={ratingAlt}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
+        </div>
+
+        {/* 移动端指示器（可选） */}
+        <div className="flex justify-center mt-5 lg:hidden">
+          {testimonials.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2 h-2 rounded-full mx-1 transition-all ${
+                currentSlide === index ? "bg-[#4EACEA] w-6" : "bg-gray-300"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
     </section>
