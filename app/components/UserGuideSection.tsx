@@ -16,6 +16,7 @@ interface UserGuideSectionProps {
   macDownloadUrl: string;
   downloadButtonText?: string;
   defaultActiveStep?: number;
+  transitionDuration?: number;
 }
 
 export default function UserGuideSection({
@@ -24,9 +25,43 @@ export default function UserGuideSection({
   windowsDownloadUrl,
   macDownloadUrl,
   downloadButtonText = "Free Download",
-  defaultActiveStep = 0
+  defaultActiveStep = 0,
+  transitionDuration = 500
 }: UserGuideSectionProps) {
   const [activeStep, setActiveStep] = useState(defaultActiveStep);
+  const [displayStep, setDisplayStep] = useState(defaultActiveStep);
+  const [nextStep, setNextStep] = useState<number | null>(null);
+  const [direction, setDirection] = useState<'left' | 'right'>('right');
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [animationStarted, setAnimationStarted] = useState(false);
+
+  const handleStepClick = (index: number) => {
+    if (index === activeStep || isAnimating) return;
+
+    // 确定滑动方向
+    const dir = index > activeStep ? 'right' : 'left';
+    setDirection(dir);
+    setNextStep(index);
+    setIsAnimating(true);
+    setAnimationStarted(false);
+    
+    // 第一帧：渲染两张图但不移动
+    requestAnimationFrame(() => {
+      // 第二帧：开始移动动画
+      requestAnimationFrame(() => {
+        setAnimationStarted(true);
+      });
+    });
+
+    // 动画结束后更新状态
+    setTimeout(() => {
+      setActiveStep(index);
+      setDisplayStep(index);
+      setNextStep(null);
+      setIsAnimating(false);
+      setAnimationStarted(false);
+    }, transitionDuration + 100);
+  };
 
   return (
     <section className="bg-white">
@@ -39,8 +74,9 @@ export default function UserGuideSection({
         {/* 内容区域 */}
         <div className="flex flex-col lg:flex-row items-center mt-5 lg:mt-12.5">
           {/* 左侧图片轮播 */}
-          <div className="w-full lg:flex-1 overflow-hidden">
-            <div className="w-full">
+          <div className="w-full lg:flex-1 overflow-hidden relative">
+            {!isAnimating ? (
+              // 非动画状态：只显示当前步骤
               <picture 
                 className="rounded-[20px] lg:rounded-[30px] px-4 lg:px-8 pt-6 lg:pt-15 block"
                 style={{ 
@@ -48,41 +84,106 @@ export default function UserGuideSection({
                 }}
               >
                 <source 
-                  srcSet={steps[activeStep].imageWebp} 
+                  srcSet={steps[displayStep].imageWebp} 
                   type="image/webp"
                 />
                 <img 
                   width="762" 
                   height="527" 
                   className="rounded-[20px] lg:rounded-[30px] border-4 lg:border-8 border-[#4EACEA] w-full" 
-                  src={steps[activeStep].image} 
-                  alt={steps[activeStep].title}
+                  src={steps[displayStep].image} 
+                  alt={steps[displayStep].title}
                 />
               </picture>
-            </div>
+            ) : (
+              // 动画状态：显示两张图片的跑马灯效果
+              <div 
+                className="flex ease-in-out"
+                style={{
+                  transform: animationStarted 
+                    ? (direction === 'right' ? 'translateX(-100%)' : 'translateX(0%)') 
+                    : (direction === 'right' ? 'translateX(0%)' : 'translateX(-100%)'),
+                  transition: animationStarted ? `transform ${transitionDuration}ms ease-in-out` : 'none'
+                }}
+              >
+                {/* 第一张图片 */}
+                <div className="w-full flex-shrink-0">
+                  <picture 
+                    className="rounded-[20px] lg:rounded-[30px] px-4 lg:px-8 pt-6 lg:pt-15 block"
+                    style={{ 
+                      background: "linear-gradient(180deg, #F4FCFF 0%, #F5FBFF 100%)"
+                    }}
+                  >
+                    <source 
+                      srcSet={steps[direction === 'right' ? displayStep : (nextStep ?? displayStep)].imageWebp} 
+                      type="image/webp"
+                    />
+                    <img 
+                      width="762" 
+                      height="527" 
+                      className="rounded-[20px] lg:rounded-[30px] border-4 lg:border-8 border-[#4EACEA] w-full" 
+                      src={steps[direction === 'right' ? displayStep : (nextStep ?? displayStep)].image} 
+                      alt={steps[direction === 'right' ? displayStep : (nextStep ?? displayStep)].title}
+                    />
+                  </picture>
+                </div>
+
+                {/* 第二张图片 */}
+                <div className="w-full flex-shrink-0">
+                  <picture 
+                    className="rounded-[20px] lg:rounded-[30px] px-4 lg:px-8 pt-6 lg:pt-15 block"
+                    style={{ 
+                      background: "linear-gradient(180deg, #F4FCFF 0%, #F5FBFF 100%)"
+                    }}
+                  >
+                    <source 
+                      srcSet={steps[direction === 'right' ? (nextStep ?? displayStep) : displayStep].imageWebp} 
+                      type="image/webp"
+                    />
+                    <img 
+                      width="762" 
+                      height="527" 
+                      className="rounded-[20px] lg:rounded-[30px] border-4 lg:border-8 border-[#4EACEA] w-full" 
+                      src={steps[direction === 'right' ? (nextStep ?? displayStep) : displayStep].image} 
+                      alt={steps[direction === 'right' ? (nextStep ?? displayStep) : displayStep].title}
+                    />
+                  </picture>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* 右侧步骤说明 */}
           <div className="w-full lg:w-[26.75rem] lg:ml-10 mt-5 lg:mt-0">
             <div className="p-1 overflow-hidden">
-              <div className="flex flex-col">
+              <div className="flex flex-col space-y-2.5">
                 {steps.map((step, index) => (
                   <div
                     key={index}
-                    className={`lg:flex-1 cursor-pointer rounded-2xl transition-all ${
+                    className={`cursor-pointer rounded-2xl transition-all ${
                       activeStep === index 
                         ? 'border border-[#4EACEA] shadow-[0_1px_7px_0_rgba(77,116,188,0.42)]' 
-                        : 'border border-transparent'
+                        : 'border border-transparent hover:border-[#e0f2ff]'
                     }`}
-                    onClick={() => setActiveStep(index)}
+                    onClick={() => handleStepClick(index)}
                   >
                     <div className="p-2.5 lg:p-5">
                       <h6 className="text-lg lg:text-2xl lg:leading-[2.125rem] font-semibold">
                         <span className="text-[#4EACEA]">Step{index + 1}:</span> {step.title}
                       </h6>
-                      <p className="mt-1 lg:mt-2.5 text-[#292929] text-sm lg:text-lg">
-                        {step.description}
-                      </p>
+                      
+                      {/* 只显示当前激活步骤的详细描述 */}
+                      <div 
+                        className={`overflow-hidden transition-all duration-300 ${
+                          activeStep === index 
+                            ? 'max-h-40 opacity-100 mt-1 lg:mt-2.5' 
+                            : 'max-h-0 opacity-0'
+                        }`}
+                      >
+                        <p className="text-[#292929] text-sm lg:text-lg">
+                          {step.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 ))}

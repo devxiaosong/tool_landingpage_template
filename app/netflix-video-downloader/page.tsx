@@ -55,6 +55,8 @@ const HOW_CAN_HELP_DATA = {
 // Features Tab 数据
 const FEATURES_TAB_DATA = {
   mainTitle: "Enjoy Effective OnlyFans Video Download Experience with the Best OnlyFans Downloader",
+  autoPlayInterval: 3000, // 自动切换间隔（毫秒）
+  transitionDuration: 600, // 转场动画持续时间（毫秒）
   features: [
     {
       icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/download-default-icon.svg",
@@ -130,6 +132,7 @@ const USER_GUIDE_DATA = {
   mainTitle: "How to use iDownerGo OnlyFans Downloader?",
   windowsDownloadUrl: "/download/?product=idownergo.exe",
   macDownloadUrl: "/download/?product=idownergo.dmg",
+  transitionDuration: 500, // 转场动画持续时间（毫秒）
   steps: [
     {
       image: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/select-onlyfans-downloader.png",
@@ -198,6 +201,7 @@ const PLAN_TABLE_DATA = {
 // Testimonials Section 数据
 const TESTIMONIALS_DATA = {
   mainTitle: "See Why Users Love iDownerGo OnlyFans Downloader",
+  transitionDuration: 500, // 转场动画持续时间（毫秒）
   testimonials: [
     {
       quote: "As a social media marketer, definitely, this is one of the most reliable and professional tools that I have used from 2 years ago and I never separate it ever. Thanks of the professional team of iDownerGo for giving me this experience.",

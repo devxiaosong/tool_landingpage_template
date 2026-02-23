@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 interface Testimonial {
   quote: string;
@@ -18,7 +18,7 @@ interface TestimonialsSectionProps {
   arrowIcon?: string;
   arrowAlt?: string;
   backgroundColor?: string;
-  defaultSlide?: number;
+  transitionDuration?: number;
 }
 
 export default function TestimonialsSection({
@@ -31,17 +31,63 @@ export default function TestimonialsSection({
   arrowIcon = "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/white-arrow.svg",
   arrowAlt = "arrow",
   backgroundColor = "linear-gradient(180deg, #F4FCFF 0%, #F5FBFF 100%)",
-  defaultSlide = 0
+  transitionDuration = 500
 }: TestimonialsSectionProps) {
-  const [currentSlide, setCurrentSlide] = useState(defaultSlide);
+  // 克隆首尾元素实现无限循环
+  const extendedTestimonials = [
+    ...testimonials.slice(-2), // 克隆最后2个放在开头
+    ...testimonials,
+    ...testimonials.slice(0, 2) // 克隆前2个放在结尾
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(2); // 从真实的第一个元素开始（索引2）
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const transitionRef = useRef<NodeJS.Timeout | null>(null);
 
   const handlePrev = () => {
-    setCurrentSlide((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+    if (!isTransitioning) return;
+    setCurrentIndex((prev) => prev - 1);
   };
 
   const handleNext = () => {
-    setCurrentSlide((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+    if (!isTransitioning) return;
+    setCurrentIndex((prev) => prev + 1);
   };
+
+  // 处理无限循环的边界重置
+  useEffect(() => {
+    if (!isTransitioning) return;
+
+    // 清除之前的定时器
+    if (transitionRef.current) {
+      clearTimeout(transitionRef.current);
+    }
+
+    // 动画结束后检查是否需要重置位置
+    transitionRef.current = setTimeout(() => {
+      setIsTransitioning(false);
+
+      // 如果滑到了克隆的最后元素，跳回真实的第一个
+      if (currentIndex >= testimonials.length + 2) {
+        setCurrentIndex(2);
+      }
+      // 如果滑到了克隆的第一个元素，跳回真实的最后一个
+      else if (currentIndex < 2) {
+        setCurrentIndex(testimonials.length + 1);
+      }
+
+      // 重新启用过渡
+      setTimeout(() => {
+        setIsTransitioning(true);
+      }, 50);
+    }, transitionDuration);
+
+    return () => {
+      if (transitionRef.current) {
+        clearTimeout(transitionRef.current);
+      }
+    };
+  }, [currentIndex, testimonials.length, transitionDuration, isTransitioning]);
 
   return (
     <section 
@@ -55,33 +101,68 @@ export default function TestimonialsSection({
             {mainTitle}
           </h2>
 
-          {/* 导航箭头 */}
+          {/* 导航箭头 - 添加 hover 效果 */}
           <div className="lg:flex-1 flex items-center justify-end mt-5 lg:mt-0">
             <button 
               onClick={handlePrev}
-              className="w-[60px] h-[60px] mr-2.5 lg:mr-5 cursor-pointer bg-contain bg-no-repeat"
-              style={{ backgroundImage: `url('${arrowIcon}')` }}
+              className="w-[60px] h-[60px] mr-2.5 lg:mr-5 cursor-pointer rounded-full flex items-center justify-center transition-all duration-300 hover:bg-[#4EACEA] hover:scale-110 hover:shadow-lg group relative"
               aria-label={`Previous ${arrowAlt}`}
-            />
+            >
+              {/* 默认状态：显示图片箭头 */}
+              <div 
+                className="absolute inset-0 bg-contain bg-no-repeat bg-center group-hover:opacity-0 transition-opacity duration-300"
+                style={{ backgroundImage: `url('${arrowIcon}')` }}
+              />
+              {/* Hover状态：显示白色SVG箭头 */}
+              <svg 
+                className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10" 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M15 18L9 12L15 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
             <button 
               onClick={handleNext}
-              className="w-[60px] h-[60px] ml-2.5 lg:ml-5 cursor-pointer bg-contain bg-no-repeat transform rotate-180"
-              style={{ backgroundImage: `url('${arrowIcon}')` }}
+              className="w-[60px] h-[60px] ml-2.5 lg:ml-5 cursor-pointer rounded-full flex items-center justify-center transition-all duration-300 hover:bg-[#4EACEA] hover:scale-110 hover:shadow-lg group relative"
               aria-label={`Next ${arrowAlt}`}
-            />
+            >
+              {/* 默认状态：显示图片箭头（旋转180度） */}
+              <div 
+                className="absolute inset-0 bg-contain bg-no-repeat bg-center transform rotate-180 group-hover:opacity-0 transition-opacity duration-300"
+                style={{ backgroundImage: `url('${arrowIcon}')` }}
+              />
+              {/* Hover状态：显示白色SVG箭头 */}
+              <svg 
+                className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10" 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M9 18L15 12L9 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
           </div>
         </div>
 
-        {/* 评价卡片轮播 */}
+        {/* 评价卡片轮播 - 显示 2.5 个卡片 */}
         <div className="mt-5 lg:mt-15 overflow-hidden">
           <div 
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            className="flex ease-in-out"
+            style={{
+              transform: `translateX(-${currentIndex * 40}%)`,
+              transition: isTransitioning ? `transform ${transitionDuration}ms ease-in-out` : 'none'
+            }}
           >
-            {testimonials.map((testimonial, index) => (
+            {extendedTestimonials.map((testimonial, index) => (
               <div 
                 key={index}
-                className="min-w-full lg:min-w-[calc(50%-20px)] lg:max-w-[calc(50%-20px)] lg:mr-10 px-2"
+                className="w-full lg:w-[40%] flex-shrink-0 px-2 lg:px-2.5"
               >
                 <div className="bg-white shadow-[0px_1px_6px_0px_rgba(166,196,216,0.5)] rounded-[20px] py-5 lg:py-7.5 px-6 lg:px-10 h-full flex flex-col justify-between">
                   {/* 评价内容 */}
@@ -123,14 +204,13 @@ export default function TestimonialsSection({
           </div>
         </div>
 
-        {/* 移动端指示器（可选） */}
+        {/* 移动端指示器 */}
         <div className="flex justify-center mt-5 lg:hidden">
           {testimonials.map((_, index) => (
             <button
               key={index}
-              onClick={() => setCurrentSlide(index)}
               className={`w-2 h-2 rounded-full mx-1 transition-all ${
-                currentSlide === index ? "bg-[#4EACEA] w-6" : "bg-gray-300"
+                (currentIndex - 2) % testimonials.length === index ? "bg-[#4EACEA] w-6" : "bg-gray-300"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
