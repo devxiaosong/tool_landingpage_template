@@ -27,7 +27,7 @@ export default function CTASection({
 }: CTASectionProps) {
   return (
     <section 
-      className="py-10 md:py-15"
+      className="py-10 md:py-15 relative"
       style={{
         backgroundImage: `url('${backgroundImage}')`,
         backgroundSize: "cover",
@@ -35,6 +35,9 @@ export default function CTASection({
         backgroundRepeat: "no-repeat"
       }}
     >
+      {/* 蒙层 */}
+      <div className="absolute inset-0 bg-black/70 z-0"></div>
+      
       <div className="container max-w-[1310px] mx-auto px-4 relative z-[1]">
         <div 
           className="rounded-[20px] md:rounded-[40px] p-8 md:p-[50px] flex flex-col items-center"
