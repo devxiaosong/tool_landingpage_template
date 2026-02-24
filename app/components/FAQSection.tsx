@@ -34,8 +34,25 @@ export default function FAQSection({
     setOpenIndex(openIndex === index ? -1 : index);
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="container max-w-[1310px] mx-auto px-4 py-10 md:py-20">
         {/* 标题 */}
         <h2 className="text-center text-[1.5rem]/[1.75rem] lg:text-[2.5rem]/[3rem] font-bold text-black">

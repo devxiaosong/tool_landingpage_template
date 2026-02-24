@@ -48,9 +48,9 @@ export default function HeroBanner({
           </div>
 
           {/* 主标题 */}
-          <h2 className="text-2xl lg:text-[42px] lg:leading-[50px] text-white font-bold text-center lg:text-left mt-4">
+          <h1 className="text-2xl lg:text-[42px] lg:leading-[50px] text-white font-bold text-center lg:text-left mt-4">
             {title}
-          </h2>
+          </h1>
 
           {/* 描述 */}
           <p className="text-sm lg:text-lg lg:leading-7 text-white mt-2 lg:mt-6 text-center lg:text-left lg:pr-10">

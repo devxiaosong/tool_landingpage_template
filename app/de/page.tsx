@@ -330,6 +330,30 @@ export default function HomeDE() {
     <div>
       <Header />
       <HeroBanner {...HERO_DATA} />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "iDownerGo OnlyFans Video Downloader",
+            "operatingSystem": "Windows, macOS",
+            "applicationCategory": "MultimediaApplication",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "EUR"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "ratingCount": "2100"
+            }
+          })
+        }}
+      />
+
       <ContentBlock {...WHY_NEED_DATA} />
       <ContentBlock {...HOW_CAN_HELP_DATA} />
       <FeaturesTab {...FEATURES_TAB_DATA} />

@@ -59,17 +59,17 @@ export default function ContentBlock({
           <div className={`lg:w-1/2 ${
             imagePosition === "left" ? "lg:pl-[55px]" : "lg:pr-[55px] order-1 lg:order-1"
           }`}>
-            <h2 className="text-2xl md:text-[1.75rem] md:leading-[2.5rem] text-[#333333] text-center lg:text-left font-bold">
-              <span 
-                className="inline-block"
+          <h3 className="text-2xl md:text-[1.75rem] md:leading-[2.5rem] text-[#333333] text-center lg:text-left font-bold">
+            <span 
+              className="inline-block"
                 style={{ 
                   backgroundImage: "linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(78, 172, 234, 0.35) 50.01%, rgba(78, 172, 234, 0.35) 100%)"
                 }}
               >
                 {subtitleHighlight}
               </span>{" "}
-              {subtitle}
-            </h2>
+            {subtitle}
+          </h3>
             
             <ul className="mt-2.5 lg:mt-[30px] text-base lg:text-lg text-[#333333] space-y-2.5 md:space-y-5">
               {items.map((item, index) => (

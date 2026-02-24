@@ -162,7 +162,7 @@ export default function Footer() {
           {/* Language Selector */}
           <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col items-start lg:items-center mt-8 lg:mt-0">
             <div>
-              <h3 className="text-xl text-white font-bold mb-5">{t.language}</h3>
+              <div className="text-xl text-white font-bold mb-5">{t.language}</div>
               <div className="relative inline-block">
                 <button
                   onClick={() => setIsLanguageOpen(!isLanguageOpen)}

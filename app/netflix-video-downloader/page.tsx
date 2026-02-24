@@ -295,6 +295,29 @@ export default function NetflixDownloaderPage() {
       
       {/* Hero Banner */}
       <HeroBanner {...HERO_DATA} />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "iDownerGo Netflix Video Downloader",
+            "operatingSystem": "Windows, macOS",
+            "applicationCategory": "MultimediaApplication",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "USD"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "1250"
+            }
+          })
+        }}
+      />
       
       {/* Why Need Section */}
       <ContentBlock {...WHY_NEED_DATA} />

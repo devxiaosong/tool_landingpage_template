@@ -145,7 +145,7 @@ export default function FeaturesTab({
 
               {/* 右侧文字内容 */}
               <div className="lg:w-1/2 mt-5 lg:mt-0 lg:pl-[55px]">
-                <h4 className="text-center lg:text-left text-2xl md:text-[1.75rem] md:leading-[2.5rem] font-bold text-white">
+                <h3 className="text-center lg:text-left text-2xl md:text-[1.75rem] md:leading-[2.5rem] font-bold text-white">
                   <span 
                     className="inline-block"
                     style={{ 
@@ -155,7 +155,7 @@ export default function FeaturesTab({
                     {features[displayTab].contentTitle}
                   </span>
                   {features[displayTab].contentTitleHighlight}
-                </h4>
+                </h3>
                 
                 <ul className="mt-2.5 lg:mt-[30px] text-base lg:text-lg text-white space-y-2.5 md:space-y-5">
                   {features[displayTab].contentDescription.map((text, index) => (
@@ -203,7 +203,7 @@ export default function FeaturesTab({
 
                   {/* 右侧文字内容 */}
                   <div className="lg:w-1/2 mt-5 lg:mt-0 lg:pl-[55px]">
-                    <h4 className="text-center lg:text-left text-2xl md:text-[1.75rem] md:leading-[2.5rem] font-bold text-white">
+                    <h3 className="text-center lg:text-left text-2xl md:text-[1.75rem] md:leading-[2.5rem] font-bold text-white">
                       <span 
                         className="inline-block"
                         style={{ 
@@ -213,7 +213,7 @@ export default function FeaturesTab({
                         {features[direction === 'right' ? displayTab : (nextTab ?? displayTab)].contentTitle}
                       </span>
                       {features[direction === 'right' ? displayTab : (nextTab ?? displayTab)].contentTitleHighlight}
-                    </h4>
+                    </h3>
                     
                     <ul className="mt-2.5 lg:mt-[30px] text-base lg:text-lg text-white space-y-2.5 md:space-y-5">
                       {features[direction === 'right' ? displayTab : (nextTab ?? displayTab)].contentDescription.map((text, index) => (
@@ -252,7 +252,7 @@ export default function FeaturesTab({
 
                   {/* 右侧文字内容 */}
                   <div className="lg:w-1/2 mt-5 lg:mt-0 lg:pl-[55px]">
-                    <h4 className="text-center lg:text-left text-2xl md:text-[1.75rem] md:leading-[2.5rem] font-bold text-white">
+                    <h3 className="text-center lg:text-left text-2xl md:text-[1.75rem] md:leading-[2.5rem] font-bold text-white">
                       <span 
                         className="inline-block"
                         style={{ 
@@ -262,7 +262,7 @@ export default function FeaturesTab({
                         {features[direction === 'right' ? (nextTab ?? displayTab) : displayTab].contentTitle}
                       </span>
                       {features[direction === 'right' ? (nextTab ?? displayTab) : displayTab].contentTitleHighlight}
-                    </h4>
+                    </h3>
                     
                     <ul className="mt-2.5 lg:mt-[30px] text-base lg:text-lg text-white space-y-2.5 md:space-y-5">
                       {features[direction === 'right' ? (nextTab ?? displayTab) : displayTab].contentDescription.map((text, index) => (
