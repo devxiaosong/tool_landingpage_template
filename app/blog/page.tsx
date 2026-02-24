@@ -3,10 +3,38 @@ import Footer from "../components/Footer";
 import BlogListContent from "../components/BlogListContent";
 import { getAllPosts, getAllCategories } from "@/lib/posts";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Blog — iDownerGo",
   description:
     "Tips, guides, and tutorials on downloading and converting videos from your favorite platforms.",
+  alternates: {
+    canonical: "https://idownergo.com/blog/",
+  },
+  openGraph: {
+    title: "Blog — iDownerGo",
+    description:
+      "Tips, guides, and tutorials on downloading and converting videos from your favorite platforms.",
+    url: "https://idownergo.com/blog/",
+    images: [
+      {
+        url: "https://idownergo.com/wp-content/themes/idownergo/assets/img/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "iDownerGo Blog",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog — iDownerGo",
+    description:
+      "Tips, guides, and tutorials on downloading and converting videos from your favorite platforms.",
+    images: [
+      "https://idownergo.com/wp-content/themes/idownergo/assets/img/og-default.png",
+    ],
+  },
 };
 
 export default function BlogPage() {

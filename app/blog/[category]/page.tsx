@@ -20,6 +20,30 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `${cat.label} — iDownerGo Blog`,
     description: `Browse all ${cat.label} articles and guides on iDownerGo Blog.`,
+    alternates: {
+      canonical: `https://idownergo.com/blog/${params.category}/`,
+    },
+    openGraph: {
+      title: `${cat.label} — iDownerGo Blog`,
+      description: `Browse all ${cat.label} articles and guides on iDownerGo Blog.`,
+      url: `https://idownergo.com/blog/${params.category}/`,
+      images: [
+        {
+          url: "https://idownergo.com/wp-content/themes/idownergo/assets/img/og-default.png",
+          width: 1200,
+          height: 630,
+          alt: `iDownerGo Blog — ${cat.label}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title: `${cat.label} — iDownerGo Blog`,
+      description: `Browse all ${cat.label} articles and guides on iDownerGo Blog.`,
+      images: [
+        "https://idownergo.com/wp-content/themes/idownergo/assets/img/og-default.png",
+      ],
+    },
   };
 }
 

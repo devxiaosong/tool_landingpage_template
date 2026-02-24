@@ -1,6 +1,20 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import RefundPolicyContent from "../components/RefundPolicyContent";
+
+export const metadata: Metadata = {
+  title: "Refund Policy — iDownerGo",
+  description:
+    "Read iDownerGo's Refund Policy. We offer a 30-day money-back guarantee. Learn about eligibility and how to request a refund.",
+  alternates: {
+    canonical: "https://idownergo.com/refund-policy/",
+  },
+  robots: {
+    index: true,
+    follow: false,
+  },
+};
 
 export default function RefundPolicyPage() {
   return (

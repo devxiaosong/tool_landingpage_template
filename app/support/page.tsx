@@ -1,7 +1,28 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SupportContent, { FAQCategory } from "../components/SupportContent";
 import ContactCard from "../components/ContactCard";
+
+export const metadata: Metadata = {
+  title: "Support — iDownerGo Help Center",
+  description:
+    "Get help with iDownerGo. Find answers to common questions about product usage, license, payment, and refund policy. Our support team is here to help.",
+  alternates: {
+    canonical: "https://idownergo.com/support/",
+    languages: {
+      "en": "https://idownergo.com/support/",
+      "de": "https://idownergo.com/de/support",
+      "x-default": "https://idownergo.com/support/",
+    },
+  },
+  openGraph: {
+    title: "Support — iDownerGo Help Center",
+    description:
+      "Get help with iDownerGo. Find answers to common questions about product usage, license, payment, and refund policy.",
+    url: "https://idownergo.com/support/",
+  },
+};
 
 const SUPPORT_CATEGORIES: FAQCategory[] = [
   {

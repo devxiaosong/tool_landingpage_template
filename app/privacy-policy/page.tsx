@@ -1,6 +1,20 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PrivacyPolicyContent from "../components/PrivacyPolicyContent";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy — iDownerGo",
+  description:
+    "Read iDownerGo's Privacy Policy. Learn how we collect, use, and protect your personal information when you use our video downloader software.",
+  alternates: {
+    canonical: "https://idownergo.com/privacy-policy/",
+  },
+  robots: {
+    index: true,
+    follow: false,
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (

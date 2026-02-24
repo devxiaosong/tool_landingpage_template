@@ -1,6 +1,44 @@
+import type { Metadata } from "next";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HeroBanner from "./components/HeroBanner";
+
+export const metadata: Metadata = {
+  title: "iDownerGo OnlyFans Video Downloader — Download in 1080p",
+  description:
+    "Download OnlyFans videos from your favorite creators in 1080p HD quality with one click. Ad-free, 100% secure, supports batch download and MP4/MKV output.",
+  alternates: {
+    canonical: "https://idownergo.com/",
+    languages: {
+      "en": "https://idownergo.com/",
+      "de": "https://idownergo.com/de",
+      "x-default": "https://idownergo.com/",
+    },
+  },
+  openGraph: {
+    title: "iDownerGo OnlyFans Video Downloader — Download in 1080p",
+    description:
+      "Download OnlyFans videos from your favorite creators in 1080p HD quality with one click. Ad-free, 100% secure, supports batch download and MP4/MKV output.",
+    url: "https://idownergo.com/",
+    images: [
+      {
+        url: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-downloader.png",
+        width: 1200,
+        height: 630,
+        alt: "iDownerGo OnlyFans Video Downloader",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "iDownerGo OnlyFans Video Downloader — Download in 1080p",
+    description:
+      "Download OnlyFans videos from your favorite creators in 1080p HD quality with one click.",
+    images: [
+      "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-downloader.png",
+    ],
+  },
+};
 import ContentBlock from "./components/ContentBlock";
 import FeaturesTab from "./components/FeaturesTab";
 import UserGuideSection from "./components/UserGuideSection";

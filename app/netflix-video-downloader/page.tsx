@@ -1,6 +1,39 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroBanner from "../components/HeroBanner";
+
+export const metadata: Metadata = {
+  title: "iDownerGo Netflix Video Downloader — Download Netflix in 1080p",
+  description:
+    "Download Netflix videos, movies and TV shows in 1080p HD quality for offline viewing. Supports MP4/MKV output, batch download, and subtitle preservation.",
+  alternates: {
+    canonical: "https://idownergo.com/netflix-video-downloader/",
+  },
+  openGraph: {
+    title: "iDownerGo Netflix Video Downloader — Download Netflix in 1080p",
+    description:
+      "Download Netflix videos, movies and TV shows in 1080p HD quality for offline viewing. Supports MP4/MKV output, batch download, and subtitle preservation.",
+    url: "https://idownergo.com/netflix-video-downloader/",
+    images: [
+      {
+        url: "https://idownergo.com/wp-content/themes/idownergo/assets/img/netflix-downloader/netflix-video-downloader.png",
+        width: 1200,
+        height: 630,
+        alt: "iDownerGo Netflix Video Downloader",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "iDownerGo Netflix Video Downloader — Download Netflix in 1080p",
+    description:
+      "Download Netflix videos, movies and TV shows in 1080p HD quality for offline viewing.",
+    images: [
+      "https://idownergo.com/wp-content/themes/idownergo/assets/img/netflix-downloader/netflix-video-downloader.png",
+    ],
+  },
+};
 import ContentBlock from "../components/ContentBlock";
 import FeaturesTab from "../components/FeaturesTab";
 import UserGuideSection from "../components/UserGuideSection";

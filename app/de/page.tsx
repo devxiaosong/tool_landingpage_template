@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroBanner from "../components/HeroBanner";
@@ -9,10 +10,41 @@ import TestimonialsSection from "../components/TestimonialsSection";
 import FAQSection from "../components/FAQSection";
 import CTASection from "../components/CTASection";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "iDownerGo OnlyFans Video Downloader — Kostenloser Download",
   description:
     "Lade OnlyFans-Videos deiner Lieblingsersteller in 1080p-Qualität mit einem Klick herunter und genieße sie offline auf jedem Gerät.",
+  alternates: {
+    canonical: "https://idownergo.com/de",
+    languages: {
+      "en": "https://idownergo.com/",
+      "de": "https://idownergo.com/de",
+      "x-default": "https://idownergo.com/",
+    },
+  },
+  openGraph: {
+    title: "iDownerGo OnlyFans Video Downloader — Kostenloser Download",
+    description:
+      "Lade OnlyFans-Videos deiner Lieblingsersteller in 1080p-Qualität mit einem Klick herunter und genieße sie offline auf jedem Gerät.",
+    url: "https://idownergo.com/de",
+    images: [
+      {
+        url: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-downloader.png",
+        width: 1200,
+        height: 630,
+        alt: "iDownerGo OnlyFans Video Downloader",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "iDownerGo OnlyFans Video Downloader — Kostenloser Download",
+    description:
+      "Lade OnlyFans-Videos deiner Lieblingsersteller in 1080p-Qualität mit einem Klick herunter und genieße sie offline auf jedem Gerät.",
+    images: [
+      "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-downloader.png",
+    ],
+  },
 };
 
 // Hero Banner
