@@ -1,22 +1,90 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+
+const translations = {
+  en: {
+    slogan: "Make your life better",
+    resources: "Resources",
+    tutorials: "How-to Tutorials",
+    tutorialsHref: "/how-to/",
+    userGuide: "User Guide",
+    userGuideHref: "/blog",
+    retrieveLicense: "Retrieve License",
+    retrieveLicenseHref: "/retrieve-license/",
+    support: "Support",
+    supportCenter: "Support Center",
+    supportCenterHref: "/support/",
+    aboutUs: "About Us",
+    aboutUsHref: "/about-us/",
+    contactUs: "Contact Us",
+    contactUsHref: "/contact-us/",
+    language: "Language",
+    statement: "Statement",
+    licenseAgreement: "License Agreement",
+    termsOfUse: "Terms of Use",
+    privacyPolicy: "Privacy Policy",
+    refundPolicy: "Refund Policy",
+    cookies: "Cookies",
+    shippingPolicy: "Shipping Policy",
+    copyright: "Copyright © 2026 iDownerGo Studio. All rights reserved.",
+  },
+  de: {
+    slogan: "Mach dein Leben besser",
+    resources: "Ressourcen",
+    tutorials: "Anleitungen",
+    tutorialsHref: "/how-to/",
+    userGuide: "Benutzerhandbuch",
+    userGuideHref: "/blog",
+    retrieveLicense: "Lizenz abrufen",
+    retrieveLicenseHref: "/retrieve-license/",
+    support: "Support",
+    supportCenter: "Support-Center",
+    supportCenterHref: "/de/support/",
+    aboutUs: "Über uns",
+    aboutUsHref: "/about-us/",
+    contactUs: "Kontakt",
+    contactUsHref: "/contact-us/",
+    language: "Sprache",
+    statement: "Erklärung",
+    licenseAgreement: "Lizenzvertrag",
+    termsOfUse: "Nutzungsbedingungen",
+    privacyPolicy: "Datenschutz",
+    refundPolicy: "Rückerstattung",
+    cookies: "Cookies",
+    shippingPolicy: "Versandrichtlinie",
+    copyright: "Copyright © 2026 iDownerGo Studio. Alle Rechte vorbehalten.",
+  },
+};
 
 export default function Footer() {
+  const pathname = usePathname();
+  const router = useRouter();
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState("English");
+
+  const isGerman = pathname.startsWith("/de");
+  const t = isGerman ? translations.de : translations.en;
+  const currentLanguage = isGerman ? "Deutsch" : "English";
+
+  // Detect if currently on a support page
+  const isOnSupport =
+    pathname === "/support" ||
+    pathname === "/de/support" ||
+    pathname.startsWith("/de/support/");
+
+  const handleLanguageSelect = (code: string) => {
+    setIsLanguageOpen(false);
+    if (code === "en") {
+      router.push(isOnSupport ? "/support" : "/");
+    } else if (code === "de") {
+      router.push(isOnSupport ? "/de/support" : "/de");
+    }
+  };
 
   const languages = [
     { code: "en", name: "English", flag: "🇺🇸" },
-    { code: "es", name: "Español", flag: "🇪🇸" },
-    { code: "pt", name: "Português", flag: "🇵🇹" },
-    { code: "it", name: "Italiano", flag: "🇮🇹" },
     { code: "de", name: "Deutsch", flag: "🇩🇪" },
-    { code: "ja", name: "日本語", flag: "🇯🇵" },
-    { code: "ko", name: "한국인", flag: "🇰🇷" },
-    { code: "zh-cn", name: "中文简体", flag: "🇨🇳" },
-    { code: "zh-tw", name: "繁體中文", flag: "🇹🇼" },
-    { code: "fr", name: "Français", flag: "🇫🇷" },
   ];
 
   return (
@@ -31,33 +99,37 @@ export default function Footer() {
               className="w-15 h-15"
             />
             <a href="/">
-              <h2 className="text-[30px] font-bold text-white mt-2">iDownerGo</h2>
+              <h2 className="text-[30px] font-bold text-white mt-2">
+                iDownerGo
+              </h2>
             </a>
             <p
               className="text-lg md:text-2xl text-white mt-3 md:mt-3"
               style={{ fontFamily: "'Hurricane', cursive" }}
             >
-              Make your life better
+              {t.slogan}
             </p>
           </div>
 
           {/* Resources */}
           <div className="w-1/2 lg:w-1/4 relative z-10 lg:text-center">
             <dl className="inline-block text-left">
-              <dt className="text-xl text-white font-bold pb-2.5">Resources</dt>
+              <dt className="text-xl text-white font-bold pb-2.5">
+                {t.resources}
+              </dt>
               <dd className="text-sm text-white opacity-70 mt-2.5">
-                <a href="/how-to/" className="hover:underline">
-                  How-to Tutorials
+                <a href={t.tutorialsHref} className="hover:underline">
+                  {t.tutorials}
                 </a>
               </dd>
               <dd className="text-sm text-white opacity-70 mt-2.5">
-                <a href="/blog" className="hover:underline">
-                  User Guide
+                <a href={t.userGuideHref} className="hover:underline">
+                  {t.userGuide}
                 </a>
               </dd>
               <dd className="text-sm text-white opacity-70 mt-2.5">
-                <a href="/retrieve-license/" className="hover:underline">
-                  Retrieve License
+                <a href={t.retrieveLicenseHref} className="hover:underline">
+                  {t.retrieveLicense}
                 </a>
               </dd>
             </dl>
@@ -66,20 +138,22 @@ export default function Footer() {
           {/* Support */}
           <div className="w-1/2 lg:w-1/4 relative z-10 lg:text-center">
             <dl className="inline-block text-left">
-              <dt className="text-xl text-white font-bold pb-2.5">Support</dt>
+              <dt className="text-xl text-white font-bold pb-2.5">
+                {t.support}
+              </dt>
               <dd className="text-sm text-white opacity-70 mt-2.5">
-                <a href="/support/" className="hover:underline">
-                  Support Center
+                <a href={t.supportCenterHref} className="hover:underline">
+                  {t.supportCenter}
                 </a>
               </dd>
               <dd className="text-sm text-white opacity-70 mt-2.5">
-                <a href="/about-us/" className="hover:underline">
-                  About Us
+                <a href={t.aboutUsHref} className="hover:underline">
+                  {t.aboutUs}
                 </a>
               </dd>
               <dd className="text-sm text-white opacity-70 mt-2.5">
-                <a href="/contact-us/" className="hover:underline">
-                  Contact Us
+                <a href={t.contactUsHref} className="hover:underline">
+                  {t.contactUs}
                 </a>
               </dd>
             </dl>
@@ -88,7 +162,7 @@ export default function Footer() {
           {/* Language Selector */}
           <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col items-start lg:items-center mt-8 lg:mt-0">
             <div>
-              <h3 className="text-xl text-white font-bold mb-5">Language</h3>
+              <h3 className="text-xl text-white font-bold mb-5">{t.language}</h3>
               <div className="relative inline-block">
                 <button
                   onClick={() => setIsLanguageOpen(!isLanguageOpen)}
@@ -109,15 +183,16 @@ export default function Footer() {
                 {/* Language Dropdown */}
                 {isLanguageOpen && (
                   <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 z-10">
-                    <div className="bg-white rounded-[10px] py-2.5 shadow-lg max-h-[300px] overflow-y-auto">
+                    <div className="bg-white rounded-[10px] py-2.5 shadow-lg">
                       {languages.map((lang) => (
                         <button
                           key={lang.code}
-                          onClick={() => {
-                            setCurrentLanguage(lang.name);
-                            setIsLanguageOpen(false);
-                          }}
-                          className="flex items-center gap-2.5 px-3 py-1.5 hover:bg-gray-200 cursor-pointer w-full text-left text-sm text-[#061230]"
+                          onClick={() => handleLanguageSelect(lang.code)}
+                          className={`flex items-center gap-2.5 px-3 py-1.5 hover:bg-gray-200 cursor-pointer w-full text-left text-sm ${
+                            currentLanguage === lang.name
+                              ? "text-[#2A6DF4] font-semibold"
+                              : "text-[#061230]"
+                          }`}
                         >
                           <span className="text-xl">{lang.flag}</span>
                           <span>{lang.name}</span>
@@ -140,36 +215,36 @@ export default function Footer() {
         <div className="flex text-sm text-white opacity-70 flex-wrap justify-center">
           <div className="flex flex-wrap justify-center">
             <a href="/statement/" className="hover:underline">
-              Statement
+              {t.statement}
             </a>
             <span className="mx-2">|</span>
             <a href="/license-agreement/" className="hover:underline">
-              License Agreement
+              {t.licenseAgreement}
             </a>
             <span className="mx-2">|</span>
             <a href="/terms-of-use/" className="hover:underline">
-              Terms of Use
+              {t.termsOfUse}
             </a>
             <span className="mx-2">|</span>
             <a href="/privacy-policy/" className="hover:underline">
-              Privacy Policy
+              {t.privacyPolicy}
             </a>
             <span className="mx-2">|</span>
             <a href="/refund-policy/" className="hover:underline">
-              Refund Policy
+              {t.refundPolicy}
             </a>
             <span className="mx-2">|</span>
             <a href="/cookies/" className="hover:underline">
-              Cookies
+              {t.cookies}
             </a>
             <span className="mx-2">|</span>
             <a href="/shipping-policy/" className="hover:underline">
-              Shipping Policy
+              {t.shippingPolicy}
             </a>
           </div>
         </div>
         <p className="text-sm text-white opacity-70 text-center mt-5">
-          Copyright © 2026 iDownerGo Studio. All rights reserved.
+          {t.copyright}
         </p>
       </div>
     </footer>

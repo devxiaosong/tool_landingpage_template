@@ -2,95 +2,35 @@
 
 import { useState } from "react";
 
-interface FAQItem {
+export interface FAQItem {
   question: string;
   answer: string | JSX.Element;
 }
 
-interface FAQCategory {
+export interface FAQCategory {
   title: string;
   icon: string;
   items: FAQItem[];
 }
 
-export default function SupportContent() {
+interface Props {
+  title?: string;
+  titleHighlight?: string;
+  subtitle?: string;
+  searchPlaceholder?: string;
+  categories: FAQCategory[];
+}
+
+export default function SupportContent({
+  title = "Welcome to",
+  titleHighlight = "Support",
+  subtitle = "Our support specialists are here to help.",
+  searchPlaceholder = "Search for keywords...",
+  categories,
+}: Props) {
   const [searchQuery, setSearchQuery] = useState("");
   const [openCategory, setOpenCategory] = useState<number | null>(null);
   const [openQuestion, setOpenQuestion] = useState<string | null>(null);
-
-  const categories: FAQCategory[] = [
-    {
-      title: "Product",
-      icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/product.svg",
-      items: [
-        {
-          question: "Software cannnot working?",
-          answer: "Please provide the order number and tell us the details of the product not working including error prompts and product screenshots. our technicians will help you.",
-        },
-        {
-          question: "Software cannot download video/audio?",
-          answer: (
-            <ol className="list-decimal pl-5">
-              <li>Make sure the network environment works normally.</li>
-              <li>Check the URL you copied from online video address is right.</li>
-              <li>Make sure the video is not protected and the website of this video is supported by our software.</li>
-              <li>Click the menu, got to Help&gt;Open Log Folder, then it will automatically open the log file. Please compress the Log folder and send to us.</li>
-            </ol>
-          ),
-        },
-        {
-          question: "How to download video/audio without converting?",
-          answer: 'Please update to the latest version and choose the Downloading Tab on main interface, then select the output format as "Original Video/Original Audio" in the upper right corner.',
-        },
-      ],
-    },
-    {
-      title: "License",
-      icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/license.svg",
-      items: [
-        {
-          question: "What's the difference between the trial and the full version?",
-          answer: "Trial version is limited to some features. After you purchase the program, you will be provided the license code which will unlock the limitation.",
-        },
-        {
-          question: "Can I use one license on multiple computers?",
-          answer: "One license of our software can be used on one PC/Mac only. If you want to use it on multiple computers, you can purchase a Family License, which can support 2-5 Pcs/2-5 Macs. If you have commercial use, please feel free to contact us.",
-        },
-        {
-          question: "What if I lost the license code?",
-          answer: "If you lost your license code, please do not worry. you can request your original license at this page by yourself.",
-        },
-      ],
-    },
-    {
-      title: "Payment & Refund",
-      icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/payment.svg",
-      items: [
-        {
-          question: "What payment method do you accept?",
-          answer: "We accept Credit Card.",
-        },
-        {
-          question: "Is it safe to purchase product via your website?",
-          answer: "Yes, it is 100% secure. The Payment platform we utilize is Stripe, which are the most trusted ecommerce companies in the world. The order of your private information, such as credit card number, addresses and so on will never be disclosed without your specific permission.",
-        },
-        {
-          question: "What is your refund policy?",
-          answer: "iDownerGo offers a 30-day money back guarantee. If your software does not work properly or there are errors while running, and the problem cannot be solved within an acceptable time, we offer a 30-day money-back guarantee.",
-        },
-      ],
-    },
-    {
-      title: "Other FAQ",
-      icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/other.svg",
-      items: [
-        {
-          question: "How to change the automatic subscription?",
-          answer: "Please provide your order information. Once we receive it, we will modify it to manual subscription for you.",
-        },
-      ],
-    },
-  ];
 
   const toggleCategory = (index: number) => {
     setOpenCategory(openCategory === index ? null : index);
@@ -110,16 +50,26 @@ export default function SupportContent() {
     }, 100);
   };
 
+  // Filter categories by search query
+  const filteredCategories = searchQuery.trim()
+    ? categories
+        .map((cat) => ({
+          ...cat,
+          items: cat.items.filter((item) =>
+            item.question.toLowerCase().includes(searchQuery.toLowerCase())
+          ),
+        }))
+        .filter((cat) => cat.items.length > 0)
+    : categories;
+
   return (
     <section className="pt-20 bg-white">
       <div className="container mx-auto max-w-[1310px] px-4">
         {/* Title */}
         <h1 className="text-3xl md:text-5xl font-bold text-center text-gray-900 mb-8">
-          Welcome to <span className="text-[#7A32FD]">Support</span> Center
+          {title} <span className="text-[#7A32FD]">{titleHighlight}</span>
         </h1>
-        <p className="text-xl text-center text-gray-700 mb-20">
-          Our support specialists are here to help.
-        </p>
+        <p className="text-xl text-center text-gray-700 mb-20">{subtitle}</p>
 
         {/* Search Bar */}
         <div className="max-w-[742px] mx-auto flex items-center border-b-2 border-gray-600 pb-2.5 mb-20">
@@ -139,7 +89,7 @@ export default function SupportContent() {
           </svg>
           <input
             type="text"
-            placeholder="Search for keywords..."
+            placeholder={searchPlaceholder}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="flex-1 ml-4 bg-transparent outline-none text-base h-7 text-gray-900"
@@ -168,7 +118,7 @@ export default function SupportContent() {
 
         {/* FAQ Accordion */}
         <div className="pb-20">
-          {categories.map((category, categoryIndex) => (
+          {filteredCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
               id={`category-${categoryIndex}`}

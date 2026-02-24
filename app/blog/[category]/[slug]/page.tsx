@@ -41,7 +41,7 @@ export default function ArticlePage({ params }: Props) {
   // Get related posts from the same category, exclude current
   const relatedPosts = getPostsByCategory(params.category)
     .filter((p) => p.slug !== params.slug)
-    .slice(0, 3);
+    .slice(0, 5);
 
   return (
     <div>

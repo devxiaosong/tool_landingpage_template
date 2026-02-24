@@ -1,9 +1,31 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+
+const translations = {
+  en: {
+    guide: "Guide",
+    guideHref: "/guide",
+    support: "Support",
+    supportHref: "/support",
+    download: "DOWNLOAD",
+  },
+  de: {
+    guide: "Leitfaden",
+    guideHref: "/guide",
+    support: "Support",
+    supportHref: "/de/support",
+    download: "HERUNTERLADEN",
+  },
+};
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isGerman = pathname.startsWith("/de");
+  const t = isGerman ? translations.de : translations.en;
 
   return (
     <header className="sticky top-0 left-0 z-50 bg-white shadow-md">
@@ -39,20 +61,20 @@ export default function Header() {
           {/* Guide */}
           <div className="border-b xl:border-0 w-full xl:w-auto xl:mr-12">
             <a
-              href="/guide"
+              href={t.guideHref}
               className="block text-lg font-medium pl-8 xl:pl-0 py-5 xl:py-0 text-[#333333] hover:text-[#FA930D] transition-colors"
             >
-              Guide
+              {t.guide}
             </a>
           </div>
 
           {/* Support */}
           <div className="border-b xl:border-0 w-full xl:w-auto xl:mr-12">
             <a
-              href="/support"
+              href={t.supportHref}
               className="block text-lg font-medium pl-8 xl:pl-0 py-5 xl:py-0 text-[#333333] hover:text-[#FA930D] transition-colors"
             >
-              Support
+              {t.support}
             </a>
           </div>
 
@@ -74,12 +96,9 @@ export default function Header() {
                     d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16Z"
                     fill="currentColor"
                   />
-                  <path
-                    d="M20 18H4V20H20V18Z"
-                    fill="currentColor"
-                  />
+                  <path d="M20 18H4V20H20V18Z" fill="currentColor" />
                 </svg>
-                <span className="ml-2">DOWNLOAD</span>
+                <span className="ml-2">{t.download}</span>
               </a>
             </div>
           </div>
