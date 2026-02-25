@@ -1,13 +1,14 @@
 import { MetadataRoute } from "next";
 import { getAllPosts, getAllCategories } from "@/lib/posts";
-
-const BASE_URL = "https://idownergo.com";
+import { BASE_URL } from "@/lib/config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
+
+    // ── Core pages ──────────────────────────────────────────
     {
       url: `${BASE_URL}/`,
       lastModified: now,
@@ -32,6 +33,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+
+    // ── Support ──────────────────────────────────────────────
     {
       url: `${BASE_URL}/support/`,
       lastModified: now,
@@ -50,12 +53,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+
+    // ── Blog ─────────────────────────────────────────────────
     {
       url: `${BASE_URL}/blog/`,
       lastModified: now,
       changeFrequency: "daily",
       priority: 0.8,
     },
+
+    // ── Legal pages ──────────────────────────────────────────
     {
       url: `${BASE_URL}/privacy-policy/`,
       lastModified: now,
@@ -98,6 +105,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.2,
     },
+
   ];
 
   // Blog category pages

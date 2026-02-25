@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { BASE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: {
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   },
   description:
     "iDownerGo is a professional video downloader supporting Netflix, OnlyFans, Amazon Prime, Disney+ and 10,000+ sites. Download videos in 1080p HD with one click.",
-  metadataBase: new URL("https://idownergo.com"),
+  metadataBase: new URL(BASE_URL),
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
