@@ -11,3 +11,6 @@ export const CONTACT_EMAIL = `contact@${SITE_DOMAIN}`;
 export const DOWNLOAD_BASE_URL =
   process.env.NEXT_PUBLIC_DOWNLOAD_BASE_URL ||
   "https://download.tool-landingpage-template.vercel.app";
+
+// Google Analytics 4 测量 ID
+export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "";

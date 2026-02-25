@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
-import { BASE_URL } from "@/lib/config";
+import { BASE_URL, GA_ID } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: {
@@ -42,6 +43,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}</body>
+      {GA_ID && (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            strategy="afterInteractive"
+          />
+          <Script id="ga4-init" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_ID}');
+            `}
+          </Script>
+        </>
+      )}
     </html>
   );
 }
