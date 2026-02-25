@@ -24,11 +24,11 @@ interface TestimonialsSectionProps {
 export default function TestimonialsSection({
   mainTitle,
   testimonials,
-  quotationMarksIcon = "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/quotation-marks-icon.svg",
+  quotationMarksIcon = "/images/onlyfans-downloader/quotation-marks-icon.svg",
   quotationMarksAlt = "quotation marks icon",
-  ratingIcon = "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/five-star.svg",
+  ratingIcon = "/images/onlyfans-downloader/five-star.svg",
   ratingAlt = "five star",
-  arrowIcon = "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/white-arrow.svg",
+  arrowIcon = "/images/onlyfans-downloader/white-arrow.svg",
   arrowAlt = "arrow",
   backgroundColor = "linear-gradient(180deg, #F4FCFF 0%, #F5FBFF 100%)",
   transitionDuration = 500

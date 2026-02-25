@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://idownergo.com/blog/",
     images: [
       {
-        url: "https://idownergo.com/wp-content/themes/idownergo/assets/img/og-default.png",
+        url: "/images/og-default.png",
         width: 1200,
         height: 630,
         alt: "iDownerGo Blog",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Tips, guides, and tutorials on downloading and converting videos from your favorite platforms.",
     images: [
-      "https://idownergo.com/wp-content/themes/idownergo/assets/img/og-default.png",
+      "/images/og-default.png",
     ],
   },
 };

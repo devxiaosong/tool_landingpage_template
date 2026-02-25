@@ -69,7 +69,7 @@ export default function CTASection({
               style={{ boxShadow: buttonShadow }}
             >
               <svg width="30" height="30" className="overflow-hidden">
-                <use href="https://idownergo.com/wp-content/themes/idownergo/assets/svg/common.svg#win"></use>
+                <use href="/images/svg/common.svg#win"></use>
               </svg>
               <span className="flex flex-col ml-3">
                 <b className="text-base lg:text-xl lg:leading-[26px]">{downloadButtonText}</b>
@@ -84,7 +84,7 @@ export default function CTASection({
               style={{ boxShadow: buttonShadow }}
             >
               <svg width="30" height="30" className="overflow-hidden">
-                <use href="https://idownergo.com/wp-content/themes/idownergo/assets/svg/common.svg#mac"></use>
+                <use href="/images/svg/common.svg#mac"></use>
               </svg>
               <span className="flex flex-col ml-3">
                 <b className="text-base lg:text-xl lg:leading-[26px]">{downloadButtonText}</b>

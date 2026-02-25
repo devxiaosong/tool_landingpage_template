@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props) {
       url: `https://idownergo.com/blog/${params.category}/`,
       images: [
         {
-          url: "https://idownergo.com/wp-content/themes/idownergo/assets/img/og-default.png",
+          url: "/images/og-default.png",
           width: 1200,
           height: 630,
           alt: `iDownerGo Blog — ${cat.label}`,
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: Props) {
       title: `${cat.label} — iDownerGo Blog`,
       description: `Browse all ${cat.label} articles and guides on iDownerGo Blog.`,
       images: [
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/og-default.png",
+        "/images/og-default.png",
       ],
     },
   };

@@ -3,7 +3,7 @@ title: "How to Convert MOV to MP4: 6 Simple Ways for Windows & Mac"
 excerpt: "MOV files recorded on an iPhone or exported from Final Cut Pro are great quality — but they can be too large, or incompatible with Windows apps and most online platforms. Converting MOV to MP4 makes your video universally playable, smaller in file size, and ready to share anywhere."
 author: "Matthew"
 authorBio: "An internet technology enthusiast, editor and content creator who spends most of his time bringing interesting, entertaining, original and well-written articles to people."
-avatar: "https://idownergo.com/wp-content/uploads/微信截图_20240911142921-150x150.jpg"
+avatar: "/images/uploads/avatar-matthew.jpg"
 date: "2026-01-10"
 categoryLabel: "Convert Video"
 ---

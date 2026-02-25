@@ -3,7 +3,7 @@ title: "How to Convert WebM to MP4 — 5 Easy Methods for Any Device"
 excerpt: "WebM is Google's open video format, widely used for web video and browser-based playback. But if you've downloaded a WebM file and need to play it on your TV, edit it in Premiere Pro, or share it on social media, you'll need to convert it to MP4 first. Here's how to do it easily."
 author: "Matthew"
 authorBio: "An internet technology enthusiast, editor and content creator who spends most of his time bringing interesting, entertaining, original and well-written articles to people."
-avatar: "https://idownergo.com/wp-content/uploads/微信截图_20240911142921-150x150.jpg"
+avatar: "/images/uploads/avatar-matthew.jpg"
 date: "2025-12-25"
 categoryLabel: "Convert Video"
 ---

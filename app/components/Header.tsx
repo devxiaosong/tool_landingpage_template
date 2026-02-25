@@ -6,14 +6,14 @@ import { usePathname } from "next/navigation";
 const translations = {
   en: {
     guide: "Guide",
-    guideHref: "/guide",
+    guideHref: "/blog/guide",
     support: "Support",
     supportHref: "/support",
     download: "DOWNLOAD",
   },
   de: {
     guide: "Leitfaden",
-    guideHref: "/guide",
+    guideHref: "/blog/guide",
     support: "Support",
     supportHref: "/de/support",
     download: "HERUNTERLADEN",
@@ -103,24 +103,6 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Search Icon */}
-          <div className="xl:flex items-center py-5 xl:py-0 border-b xl:border-0 w-full xl:w-auto pl-8 xl:pl-0">
-            <button className="cursor-pointer text-[#666666] hover:text-[#333333] transition-colors">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                className="w-5 h-5"
-              >
-                <path
-                  d="M18.2335355,16.6021705 L13.5347446,11.9148681 C15.8466472,8.75651369 15.3371055,4.35066534 12.3653381,1.80337376 C9.39357068,-0.74391782 4.96162182,-0.573736514 2.19394265,2.19394265 C-0.573736514,4.96162182 -0.74391782,9.39357068 1.80337376,12.3653381 C4.35066534,15.3371055 8.75651369,15.8466472 11.9148681,13.5347446 L16.6021705,18.2335355 C16.8935858,18.5249508 17.3183328,18.6387615 17.7164135,18.5320961 C18.1144942,18.4254307 18.4254307,18.1144942 18.5320961,17.7164135 C18.6387615,17.3183328 18.5249508,16.8935858 18.2335355,16.6021705 L18.2335355,16.6021705 Z M7.51477787,12.6845967 C4.65956579,12.6845967 2.34495908,10.3699899 2.34495908,7.51477787 C2.34495908,4.65956579 4.65956579,2.34495908 7.51477787,2.34495908 C10.3699899,2.34495908 12.6845967,4.65956579 12.6845967,7.51477787 C12.6845967,10.3699899 10.3699899,12.6845967 7.51477787,12.6845967 Z"
-                  fill="currentColor"
-                  fillRule="nonzero"
-                />
-              </svg>
-            </button>
-          </div>
         </nav>
       </div>
     </header>

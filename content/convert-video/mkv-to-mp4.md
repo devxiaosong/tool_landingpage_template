@@ -3,7 +3,7 @@ title: "How to Convert MKV to MP4 on Windows & Mac — 5 Free Methods"
 excerpt: "MKV files are great for storing high-quality video, but they're not always compatible with every device or platform. If you've downloaded a movie or show in MKV format and can't play it on your TV, phone, or upload it to social media, converting it to MP4 is the easiest fix."
 author: "Matthew"
 authorBio: "An internet technology enthusiast, editor and content creator who spends most of his time bringing interesting, entertaining, original and well-written articles to people."
-avatar: "https://idownergo.com/wp-content/uploads/微信截图_20240911142921-150x150.jpg"
+avatar: "/images/uploads/avatar-matthew.jpg"
 date: "2026-01-20"
 categoryLabel: "Convert Video"
 ---

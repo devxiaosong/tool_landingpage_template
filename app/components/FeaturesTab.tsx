@@ -163,7 +163,7 @@ export default function FeaturesTab({
                       <span 
                         className="absolute left-0 top-2 w-2.5 h-2.5 block bg-cover"
                         style={{ 
-                          backgroundImage: "url('https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/arrow-icon-1.svg')"
+                          backgroundImage: "url('/images/onlyfans-downloader/arrow-icon-1.svg')"
                         }}
                       ></span>
                       {text}
@@ -221,7 +221,7 @@ export default function FeaturesTab({
                           <span 
                             className="absolute left-0 top-2 w-2.5 h-2.5 block bg-cover"
                             style={{ 
-                              backgroundImage: "url('https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/arrow-icon-1.svg')"
+                              backgroundImage: "url('/images/onlyfans-downloader/arrow-icon-1.svg')"
                             }}
                           ></span>
                           {text}
@@ -270,7 +270,7 @@ export default function FeaturesTab({
                           <span 
                             className="absolute left-0 top-2 w-2.5 h-2.5 block bg-cover"
                             style={{ 
-                              backgroundImage: "url('https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/arrow-icon-1.svg')"
+                              backgroundImage: "url('/images/onlyfans-downloader/arrow-icon-1.svg')"
                             }}
                           ></span>
                           {text}

@@ -31,7 +31,7 @@ function getChildText(children: React.ReactNode): string {
 }
 
 const H2_BADGE_URL =
-  "https://idownergo.com/wp-content/themes/idownergo/assets/img/single/h2-number.svg";
+  "/images/single/h2-number.svg";
 
 export default function ArticleContent({ post, relatedPosts = [] }: Props) {
   // Build h2 index map from pre-extracted headings
@@ -274,7 +274,7 @@ export default function ArticleContent({ post, relatedPosts = [] }: Props) {
               <div className="flex justify-center items-center text-xl font-bold">
                 <img
                   className="mr-5 w-[46px] h-[46px]"
-                  src="https://idownergo.com/wp-content/themes/idownergo/assets/img/logo/iDownerGo.svg"
+                  src="/images/logo/iDownerGo.svg"
                   alt="logo"
                 />
                 <span className="text-[#AC32FF]">iDownerGo</span>
@@ -303,7 +303,7 @@ export default function ArticleContent({ post, relatedPosts = [] }: Props) {
               </div>
               <img
                 className="mx-auto mt-4"
-                src="https://idownergo.com/wp-content/themes/idownergo/assets/img/single/top-banner.png"
+                src="/images/single/top-banner.png"
                 alt="download video"
                 width="180"
               />

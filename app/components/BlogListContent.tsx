@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import { PostMeta, CategoryMeta } from "@/lib/posts";
 
 interface Props {
@@ -9,78 +6,14 @@ interface Props {
   currentCategory?: string;
 }
 
-const downloaders = [
-  { name: "Netflix Downloader", link: "/netflix-video-downloader/" },
-  { name: "Hulu Downloader", link: "/hulu-downloader/" },
-  { name: "Disney Plus Downloader", link: "/disney-plus-downloader/" },
-  { name: "OnlyFans Downloader", link: "/onlyfans-downloader/" },
-  { name: "U-NEXT Downloader", link: "/unext-downloader/" },
-  { name: "Crunchyroll Downloader", link: "/crunchyroll-downloader/" },
-];
-
-const moreDownloaders = [
-  { name: "Amazon Downloader", link: "/amazon-downloader/" },
-  { name: "HBO Max Downloader", link: "/hbo-max-downloader/" },
-  { name: "Paramount Plus Downloader", link: "/paramount-plus-downloader/" },
-  { name: "Apple TV Downloader", link: "/apple-tv-plus-downloader/" },
-];
-
 export default function BlogListContent({
   posts,
   categories,
   currentCategory,
 }: Props) {
-  const [showMore, setShowMore] = useState(false);
-
   return (
     <section className="py-10 md:py-20 px-10 md:px-20 md:pt-10">
       <div className="container mx-auto max-w-[1310px]">
-        {/* Downloader List */}
-        <div className="flex items-start mb-10">
-          <img
-            width="38"
-            height="38"
-            src="https://idownergo.com/wp-content/themes/idownergo/assets/img/blog/download.svg"
-            alt="download"
-            className="mr-4"
-          />
-
-          <div className="relative pb-8 mb-8 mt-1.5 flex-1">
-            <button
-              onClick={() => setShowMore(!showMore)}
-              className="text-[#3D6CEC] hover:underline absolute right-0 bottom-0"
-            >
-              {showMore ? "Show Less >>" : "Show More <<"}
-            </button>
-
-            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 lg:gap-8 w-full pl-8 text-sm">
-              {downloaders.map((downloader, index) => (
-                <a
-                  key={index}
-                  href={downloader.link}
-                  className="text-black hover:text-[#3D6CEC] hover:underline"
-                >
-                  {downloader.name}
-                </a>
-              ))}
-            </div>
-
-            {showMore && (
-              <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 lg:gap-8 w-full pl-8 text-sm mt-5">
-                {moreDownloaders.map((downloader, index) => (
-                  <a
-                    key={index}
-                    href={downloader.link}
-                    className="text-black hover:text-[#3D6CEC] hover:underline"
-                  >
-                    {downloader.name}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Sidebar */}
@@ -90,7 +23,7 @@ export default function BlogListContent({
                 <img
                   width="36"
                   height="36"
-                  src="https://idownergo.com/wp-content/themes/idownergo/assets/img/blog/product.svg"
+                  src="/images/blog/product.svg"
                   alt="product"
                 />
                 <span>All Topics</span>

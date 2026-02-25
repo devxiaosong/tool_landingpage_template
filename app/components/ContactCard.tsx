@@ -12,12 +12,12 @@ export default function ContactCard({
   contactEmail = "contact@idownergo.com",
 }: Props) {
   return (
-    <section className="py-20 bg-white">
+    <section id="still-need-help" className="py-20 bg-white">
       <div className="container mx-auto max-w-[1310px] px-4 pb-12">
         <div className="bg-white rounded-[30px] shadow-[0_1px_4px_0_#CDCDCD] py-7 px-6 md:px-10 lg:pl-10 xl:pl-36 flex items-center flex-col-reverse lg:flex-row">
           {/* Left - Image */}
           <img
-            src="https://idownergo.com/wp-content/themes/idownergo/assets/img/support/still_need_help.svg"
+            src="/images/support/still_need_help.svg"
             alt="still need help"
             className="w-[236px] h-[236px] mt-10 lg:mt-0"
           />

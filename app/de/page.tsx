@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: "https://idownergo.com/de",
     images: [
       {
-        url: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-downloader.png",
+        url: "/images/onlyfans-downloader/onlyfans-downloader.png",
         width: 1200,
         height: 630,
         alt: "iDownerGo OnlyFans Video Downloader",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description:
       "Lade OnlyFans-Videos deiner Lieblingsersteller in 1080p-Qualität mit einem Klick herunter und genieße sie offline auf jedem Gerät.",
     images: [
-      "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-downloader.png",
+      "/images/onlyfans-downloader/onlyfans-downloader.png",
     ],
   },
 };
@@ -56,11 +56,11 @@ const HERO_DATA = {
   windowsDownloadUrl: "/download/?product=idownergo.exe",
   macDownloadUrl: "/download/?product=idownergo.dmg",
   backgroundImage:
-    "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/header-bg.png",
+    "/images/onlyfans-downloader/header-bg.png",
   productImage:
-    "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-downloader.png",
+    "/images/onlyfans-downloader/onlyfans-downloader.png",
   productImageWebp:
-    "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-downloader.webp",
+    "/images/onlyfans-downloader/onlyfans-downloader.webp",
   productImageAlt: "onlyfans downloader",
 };
 
@@ -74,9 +74,9 @@ const WHY_NEED_DATA = {
     "Wenn Sie Inhalte Ihrer Lieblingsersteller dauerhaft sichern möchten, falls sie gelöscht werden, oder keine monatlichen Gebühren zahlen möchten, um auf dieselben Inhalte zuzugreifen, können Sie den iDownerGo Video Downloader nutzen.",
   ],
   imageSrc:
-    "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-download-restrictions.png",
+    "/images/onlyfans-downloader/onlyfans-download-restrictions.png",
   imageWebp:
-    "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-download-restrictions.webp",
+    "/images/onlyfans-downloader/onlyfans-download-restrictions.webp",
   imageAlt: "onlyfans download restrictions",
   imagePosition: "left" as const,
 };
@@ -91,9 +91,9 @@ const HOW_CAN_HELP_DATA = {
     "Mit dem iDownerGo OnlyFans Downloader vermeiden Sie den Zugriffsverlust bei ablaufenden Abonnements oder gelöschten Inhalten – alle Downloads werden dauerhaft auf Ihrem Gerät gespeichert.",
   ],
   imageSrc:
-    "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/remove-restrictions-from-onlyfans.png",
+    "/images/onlyfans-downloader/remove-restrictions-from-onlyfans.png",
   imageWebp:
-    "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/remove-restrictions-from-onlyfans.webp",
+    "/images/onlyfans-downloader/remove-restrictions-from-onlyfans.webp",
   imageAlt: "remove restrictions from onlyfans",
   imagePosition: "right" as const,
 };
@@ -106,14 +106,14 @@ const FEATURES_TAB_DATA = {
   transitionDuration: 600,
   features: [
     {
-      icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/download-default-icon.svg",
+      icon: "/images/onlyfans-downloader/download-default-icon.svg",
       activeIcon:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/download-active-icon.svg",
+        "/images/onlyfans-downloader/download-active-icon.svg",
       tabTitle: "OnlyFans-Video herunterladen",
       contentImage:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/download-onlyfans-video.png",
+        "/images/onlyfans-downloader/download-onlyfans-video.png",
       contentImageWebp:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/download-onlyfans-video.webp",
+        "/images/onlyfans-downloader/download-onlyfans-video.webp",
       contentTitle: "OnlyFans-Videos herunterladen",
       contentTitleHighlight: " in 1080p HD-Auflösung",
       contentDescription: [
@@ -122,14 +122,14 @@ const FEATURES_TAB_DATA = {
       ],
     },
     {
-      icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/convert-default-icon.svg",
+      icon: "/images/onlyfans-downloader/convert-default-icon.svg",
       activeIcon:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/convert-active-icon.svg",
+        "/images/onlyfans-downloader/convert-active-icon.svg",
       tabTitle: "OnlyFans-Video zu MP4/MKV",
       contentImage:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-to-mp4.png",
+        "/images/onlyfans-downloader/onlyfans-to-mp4.png",
       contentImageWebp:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-to-mp4.webp",
+        "/images/onlyfans-downloader/onlyfans-to-mp4.webp",
       contentTitle: "OnlyFans-Video herunterladen",
       contentTitleHighlight: " als MP4/MKV-Datei",
       contentDescription: [
@@ -138,14 +138,14 @@ const FEATURES_TAB_DATA = {
       ],
     },
     {
-      icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/menu-default-icon.svg",
+      icon: "/images/onlyfans-downloader/menu-default-icon.svg",
       activeIcon:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/menu-active-icon.svg",
+        "/images/onlyfans-downloader/menu-active-icon.svg",
       tabTitle: "Massendownload von OnlyFans-Inhalten",
       contentImage:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/bulk-download-onlyfans.png",
+        "/images/onlyfans-downloader/bulk-download-onlyfans.png",
       contentImageWebp:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/bulk-download-onlyfans.webp",
+        "/images/onlyfans-downloader/bulk-download-onlyfans.webp",
       contentTitle: "OnlyFans-Videos",
       contentTitleHighlight: "/Bilder im Massendownload",
       contentDescription: [
@@ -154,14 +154,14 @@ const FEATURES_TAB_DATA = {
       ],
     },
     {
-      icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/subtitle-default-icon.svg",
+      icon: "/images/onlyfans-downloader/subtitle-default-icon.svg",
       activeIcon:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/subtitle-active-icon.svg",
+        "/images/onlyfans-downloader/subtitle-active-icon.svg",
       tabTitle: "OnlyFans-Chat-Videos speichern",
       contentImage:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/download-onlyfans-chat-video.png",
+        "/images/onlyfans-downloader/download-onlyfans-chat-video.png",
       contentImageWebp:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/download-onlyfans-chat-video.webp",
+        "/images/onlyfans-downloader/download-onlyfans-chat-video.webp",
       contentTitle: "OnlyFans-Nachrichten",
       contentTitleHighlight: "/Chat-Videos herunterladen",
       contentDescription: [
@@ -181,9 +181,9 @@ const SECURE_DOWNLOAD_DATA = {
     "Außerdem bietet iDownerGo regelmäßige Updates zur Verbesserung der Sicherheit und zur Behebung potenzieller Risiken.",
   ],
   imageSrc:
-    "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/enjoy-ad-free-onlyfans.png",
+    "/images/onlyfans-downloader/enjoy-ad-free-onlyfans.png",
   imageWebp:
-    "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/enjoy-ad-free-onlyfans.webp",
+    "/images/onlyfans-downloader/enjoy-ad-free-onlyfans.webp",
   imageAlt: "enjoy ad free onlyfans",
   imagePosition: "right" as const,
 };
@@ -197,27 +197,27 @@ const USER_GUIDE_DATA = {
   steps: [
     {
       image:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/select-onlyfans-downloader.png",
+        "/images/onlyfans-downloader/select-onlyfans-downloader.png",
       imageWebp:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/select-onlyfans-downloader.webp",
+        "/images/onlyfans-downloader/select-onlyfans-downloader.webp",
       title: "Den iDownerGo OnlyFans Downloader auswählen.",
       description:
         "Doppelklicken Sie auf iDownerGo und rufen Sie dann onlyfans.com über den integrierten Browser auf.",
     },
     {
       image:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/play-onlyfans-video.png",
+        "/images/onlyfans-downloader/play-onlyfans-video.png",
       imageWebp:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/play-onlyfans-video.webp",
+        "/images/onlyfans-downloader/play-onlyfans-video.webp",
       title: "OnlyFans-Video in iDownerGo abspielen.",
       description:
         "Melden Sie sich mit Ihrem Abonnementkonto auf der OnlyFans-Website an und spielen Sie das Video ab, das Sie herunterladen möchten.",
     },
     {
       image:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/save-onlyfans-video.png",
+        "/images/onlyfans-downloader/save-onlyfans-video.png",
       imageWebp:
-        "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/save-onlyfans-video.webp",
+        "/images/onlyfans-downloader/save-onlyfans-video.webp",
       title: "Videos von OnlyFans herunterladen.",
       description:
         "Klicken Sie auf die Download-Schaltfläche, um das abgespielte Video herunterzuladen.",
@@ -244,7 +244,7 @@ const PLAN_TABLE_DATA = {
     },
     {
       name: "Pro",
-      icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/table/pro-icon.svg",
+      icon: "/images/table/pro-icon.svg",
       iconAlt: "pro icon",
       highlightColor: "#4EACEA",
       downloadUrl: "/download/?product=idownergo.dmg",
@@ -276,17 +276,17 @@ const TESTIMONIALS_DATA = {
     {
       quote: "Als Social-Media-Marketer ist dies definitiv eines der zuverlässigsten und professionellsten Tools, das ich seit 2 Jahren verwende und nie mehr missen möchte. Danke an das professionelle iDownerGo-Team für dieses Erlebnis.",
       name: "Arash Ashouri",
-      avatar: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/user1.svg",
+      avatar: "/images/onlyfans-downloader/user1.svg",
     },
     {
       quote: "Ich nutze die App seit einem Jahr. Alles funktioniert einwandfrei und der Service ist einfach der beste. Wenn ich ein Problem habe, ist das Team immer da, um zu helfen! 10/10!",
       name: "Denis Hoshikawa",
-      avatar: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/user2.svg",
+      avatar: "/images/onlyfans-downloader/user2.svg",
     },
     {
       quote: "Ich habe die iDownerGo-Lifetime-Lizenz gekauft und bin sehr zufrieden. Ich spare Zeit beim Aufzeichnen von Videos und kann den Ton meiner Lieblingslieder speichern. Ich empfehle diese App jedem!",
       name: "Christopher Gallegos",
-      avatar: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/user3.svg",
+      avatar: "/images/onlyfans-downloader/user3.svg",
     },
   ],
 };
@@ -317,8 +317,8 @@ const FAQ_DATA = {
 // CTA
 const CTA_DATA = {
   backgroundImage:
-    "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/footer-bg.png",
-  logo: "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/onlyfans-logo.svg",
+    "/images/onlyfans-downloader/footer-bg.png",
+  logo: "/images/onlyfans-downloader/onlyfans-logo.svg",
   logoAlt: "onlyfans logo",
   title: "Laden Sie jetzt Ihre Lieblingsvideos mit dem iDownerGo OnlyFans Downloader herunter!",
   windowsDownloadUrl: "/download/?product=idownergo.exe",

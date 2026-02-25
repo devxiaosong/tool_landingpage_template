@@ -8,18 +8,14 @@ const translations = {
     slogan: "Make your life better",
     resources: "Resources",
     tutorials: "How-to Tutorials",
-    tutorialsHref: "/how-to/",
+    tutorialsHref: "/blog/guide",
     userGuide: "User Guide",
-    userGuideHref: "/blog",
-    retrieveLicense: "Retrieve License",
-    retrieveLicenseHref: "/retrieve-license/",
+    userGuideHref: "/blog/guide/idownergo-video-downloader",
     support: "Support",
     supportCenter: "Support Center",
     supportCenterHref: "/support/",
-    aboutUs: "About Us",
-    aboutUsHref: "/about-us/",
     contactUs: "Contact Us",
-    contactUsHref: "/contact-us/",
+    contactUsHref: "/support/#still-need-help",
     language: "Language",
     statement: "Statement",
     licenseAgreement: "License Agreement",
@@ -34,18 +30,14 @@ const translations = {
     slogan: "Mach dein Leben besser",
     resources: "Ressourcen",
     tutorials: "Anleitungen",
-    tutorialsHref: "/how-to/",
+    tutorialsHref: "/blog/guide",
     userGuide: "Benutzerhandbuch",
-    userGuideHref: "/blog",
-    retrieveLicense: "Lizenz abrufen",
-    retrieveLicenseHref: "/retrieve-license/",
+    userGuideHref: "/blog/guide/idownergo-video-downloader",
     support: "Support",
     supportCenter: "Support-Center",
     supportCenterHref: "/de/support/",
-    aboutUs: "Über uns",
-    aboutUsHref: "/about-us/",
     contactUs: "Kontakt",
-    contactUsHref: "/contact-us/",
+    contactUsHref: "/de/support/#still-need-help",
     language: "Sprache",
     statement: "Erklärung",
     licenseAgreement: "Lizenzvertrag",
@@ -94,7 +86,7 @@ export default function Footer() {
           {/* Logo & Slogan */}
           <div className="w-full md:w-1/2 lg:w-1/4 relative z-10 flex flex-col items-start md:items-center mb-8 lg:mb-0">
             <img
-              src="https://idownergo.com/wp-content/themes/idownergo/assets/img/logo/iDownerGo.svg"
+              src="/images/logo/iDownerGo.svg"
               alt="iDownerGo"
               className="w-15 h-15"
             />
@@ -127,11 +119,6 @@ export default function Footer() {
                   {t.userGuide}
                 </a>
               </dd>
-              <dd className="text-sm text-white opacity-70 mt-2.5">
-                <a href={t.retrieveLicenseHref} className="hover:underline">
-                  {t.retrieveLicense}
-                </a>
-              </dd>
             </dl>
           </div>
 
@@ -144,11 +131,6 @@ export default function Footer() {
               <dd className="text-sm text-white opacity-70 mt-2.5">
                 <a href={t.supportCenterHref} className="hover:underline">
                   {t.supportCenter}
-                </a>
-              </dd>
-              <dd className="text-sm text-white opacity-70 mt-2.5">
-                <a href={t.aboutUsHref} className="hover:underline">
-                  {t.aboutUs}
                 </a>
               </dd>
               <dd className="text-sm text-white opacity-70 mt-2.5">
@@ -214,15 +196,15 @@ export default function Footer() {
       <div className="container mx-auto max-w-[1310px] px-4 py-7.5 md:pt-5 md:pb-3">
         <div className="flex text-sm text-white opacity-70 flex-wrap justify-center">
           <div className="flex flex-wrap justify-center">
-            <a href="/statement/" className="hover:underline">
+            <a href="/statement" className="hover:underline">
               {t.statement}
             </a>
             <span className="mx-2">|</span>
-            <a href="/license-agreement/" className="hover:underline">
+            <a href="/license-agreement" className="hover:underline">
               {t.licenseAgreement}
             </a>
             <span className="mx-2">|</span>
-            <a href="/terms-of-use/" className="hover:underline">
+            <a href="/terms-of-use" className="hover:underline">
               {t.termsOfUse}
             </a>
             <span className="mx-2">|</span>
@@ -234,11 +216,11 @@ export default function Footer() {
               {t.refundPolicy}
             </a>
             <span className="mx-2">|</span>
-            <a href="/cookies/" className="hover:underline">
+            <a href="/cookies" className="hover:underline">
               {t.cookies}
             </a>
             <span className="mx-2">|</span>
-            <a href="/shipping-policy/" className="hover:underline">
+            <a href="/shipping-policy" className="hover:underline">
               {t.shippingPolicy}
             </a>
           </div>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://idownergo.com/wp-content/themes/idownergo/assets/img/og-default.png",
+        url: "/images/og-default.png",
         width: 1200,
         height: 630,
         alt: "iDownerGo Video Downloader",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: [
-      "https://idownergo.com/wp-content/themes/idownergo/assets/img/og-default.png",
+      "/images/og-default.png",
     ],
   },
 };

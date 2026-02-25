@@ -21,8 +21,8 @@ interface FAQSectionProps {
 export default function FAQSection({
   mainTitle,
   faqs,
-  expandIcon = "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/expand-icon.svg",
-  collapseIcon = "https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/close-icon.svg",
+  expandIcon = "/images/onlyfans-downloader/expand-icon.svg",
+  collapseIcon = "/images/onlyfans-downloader/close-icon.svg",
   defaultOpenIndex = 0,
   questionColor = "#333333",
   activeQuestionColor = "#4EACEA",

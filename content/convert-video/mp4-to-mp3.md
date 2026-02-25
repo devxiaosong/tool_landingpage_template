@@ -3,7 +3,7 @@ title: "How to Extract MP3 Audio from MP4 Video — 6 Best Methods"
 excerpt: "Want to save just the audio from a video? Whether it's a music video, podcast episode, lecture, or movie soundtrack, extracting the MP3 audio from an MP4 file is a common task. The good news is there are many free tools to do it quickly without any quality loss."
 author: "Matthew"
 authorBio: "An internet technology enthusiast, editor and content creator who spends most of his time bringing interesting, entertaining, original and well-written articles to people."
-avatar: "https://idownergo.com/wp-content/uploads/微信截图_20240911142921-150x150.jpg"
+avatar: "/images/uploads/avatar-matthew.jpg"
 date: "2025-12-05"
 categoryLabel: "Convert Video"
 ---

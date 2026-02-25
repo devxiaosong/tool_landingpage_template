@@ -19,13 +19,13 @@ export default function ArticleHeroBanner() {
           
           <div>
             <ul className="text-lg leading-7 space-y-2 mt-9 inline-block text-left">
-              <li className="relative pl-6 before:content-[''] before:block before:absolute before:w-3.5 before:h-3.5 before:top-1.5 before:left-0 before:bg-[url('https://idownergo.com/wp-content/themes/idownergo/assets/img/single/tick.svg')] before:bg-cover">
+              <li className="relative pl-6 before:content-[''] before:block before:absolute before:w-3.5 before:h-3.5 before:top-1.5 before:left-0 before:bg-[url('/images/single/tick.svg')] before:bg-cover">
                 Download Livestream, Video, Audio, Playlist from Various Sites.
               </li>
-              <li className="relative pl-6 mt-2 before:content-[''] before:block before:absolute before:w-3.5 before:h-3.5 before:top-1.5 before:left-0 before:bg-[url('https://idownergo.com/wp-content/themes/idownergo/assets/img/single/tick.svg')] before:bg-cover">
+              <li className="relative pl-6 mt-2 before:content-[''] before:block before:absolute before:w-3.5 before:h-3.5 before:top-1.5 before:left-0 before:bg-[url('/images/single/tick.svg')] before:bg-cover">
                 Convert the Downloaded Videos to MP4, MP3 and More.
               </li>
-              <li className="relative pl-6 mt-2 before:content-[''] before:block before:absolute before:w-3.5 before:h-3.5 before:top-1.5 before:left-0 before:bg-[url('https://idownergo.com/wp-content/themes/idownergo/assets/img/single/tick.svg')] before:bg-cover">
+              <li className="relative pl-6 mt-2 before:content-[''] before:block before:absolute before:w-3.5 before:h-3.5 before:top-1.5 before:left-0 before:bg-[url('/images/single/tick.svg')] before:bg-cover">
                 Save Video in 720P, 1080P HD, 4K, 8K.
               </li>
             </ul>
@@ -42,7 +42,7 @@ export default function ArticleHeroBanner() {
               >
                 <img 
                   className="inline-block w-[30px]" 
-                  src="https://idownergo.com/wp-content/themes/idownergo/assets/img/single/windows.svg" 
+                  src="/images/single/windows.svg" 
                   alt="windows"
                 />
                 <span className="text-white text-lg leading-5 font-bold">
@@ -60,7 +60,7 @@ export default function ArticleHeroBanner() {
               >
                 <img 
                   className="inline-block w-[30px]" 
-                  src="https://idownergo.com/wp-content/themes/idownergo/assets/img/single/mac.svg" 
+                  src="/images/single/mac.svg" 
                   alt="mac"
                 />
                 <span className="text-white text-lg leading-5 font-bold">
@@ -75,14 +75,14 @@ export default function ArticleHeroBanner() {
         <div className="w-full lg:w-1/2">
           <picture>
             <source 
-              srcSet="https://idownergo.com/wp-content/themes/idownergo/assets/img/single/top-banner.webp" 
+              srcSet="/images/single/top-banner.webp" 
               type="image/webp"
             />
             <img 
               width="692" 
               height="448" 
               className="mx-auto" 
-              src="https://idownergo.com/wp-content/themes/idownergo/assets/img/single/top-banner.png" 
+              src="/images/single/top-banner.png" 
               alt="top banner"
             />
           </picture>

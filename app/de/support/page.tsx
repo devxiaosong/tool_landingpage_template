@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const SUPPORT_CATEGORIES: FAQCategory[] = [
   {
     title: "Produkt",
-    icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/product.svg",
+    icon: "/images/support/product.svg",
     items: [
       {
         question: "Die Software funktioniert nicht?",
@@ -54,7 +54,7 @@ const SUPPORT_CATEGORIES: FAQCategory[] = [
   },
   {
     title: "Lizenz",
-    icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/license.svg",
+    icon: "/images/support/license.svg",
     items: [
       {
         question: "Was ist der Unterschied zwischen der Test- und der Vollversion?",
@@ -75,7 +75,7 @@ const SUPPORT_CATEGORIES: FAQCategory[] = [
   },
   {
     title: "Zahlung & Erstattung",
-    icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/payment.svg",
+    icon: "/images/support/payment.svg",
     items: [
       {
         question: "Welche Zahlungsmethoden akzeptieren Sie?",
@@ -95,7 +95,7 @@ const SUPPORT_CATEGORIES: FAQCategory[] = [
   },
   {
     title: "Weitere FAQ",
-    icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/other.svg",
+    icon: "/images/support/other.svg",
     items: [
       {
         question: "Wie ändere ich das automatische Abonnement?",

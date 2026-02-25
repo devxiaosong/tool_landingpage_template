@@ -3,7 +3,7 @@ title: "8 Best Ways to Convert MP4 to MOV Format Easily on Windows & Mac"
 excerpt: "Ever tried to work with a video in MOV format, only to realize you're stuck with an MP4? Whatever the reason, MOV files are popular for a reason: they look good and play nicely with a lot of programs. Whether it's for editing in Final Cut Pro, sharing on Apple devices, or just playing on a Mac, here are the 8 best ways."
 author: "Matthew"
 authorBio: "An internet technology enthusiast, editor and content creator who spends most of his time bringing interesting, entertaining, original and well-written articles to people."
-avatar: "https://idownergo.com/wp-content/uploads/微信截图_20240911142921-150x150.jpg"
+avatar: "/images/uploads/avatar-matthew.jpg"
 date: "2026-02-05"
 categoryLabel: "Convert Video"
 ---

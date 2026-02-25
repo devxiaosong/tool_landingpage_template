@@ -201,7 +201,7 @@ export default function UserGuideSection({
             className="bg-[#4EACEA] border-2 border-[#4EACEA] hover:bg-transparent h-16 lg:h-[68px] px-1 flex text-white hover:text-[#4EACEA] justify-center items-center rounded-[14px] transition-colors"
           >
             <svg width="30" height="30" className="overflow-hidden">
-              <use href="https://idownergo.com/wp-content/themes/idownergo/assets/svg/common.svg#win"></use>
+              <use href="/images/svg/common.svg#win"></use>
             </svg>
             <span className="flex flex-col ml-3">
               <b className="text-base lg:text-xl lg:leading-[26px]">{downloadButtonText}</b>
@@ -215,7 +215,7 @@ export default function UserGuideSection({
             className="bg-transparent border-2 border-[#4EACEA] hover:bg-[#4EACEA] h-16 lg:h-[68px] px-1 flex text-[#4EACEA] hover:text-white justify-center items-center rounded-[14px] transition-colors"
           >
             <svg width="30" height="30" className="overflow-hidden">
-              <use href="https://idownergo.com/wp-content/themes/idownergo/assets/svg/common.svg#mac"></use>
+              <use href="/images/svg/common.svg#mac"></use>
             </svg>
             <span className="flex flex-col ml-3">
               <b className="text-base lg:text-xl lg:leading-[26px]">{downloadButtonText}</b>

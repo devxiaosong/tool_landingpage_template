@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const SUPPORT_CATEGORIES: FAQCategory[] = [
   {
     title: "Product",
-    icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/product.svg",
+    icon: "/images/support/product.svg",
     items: [
       {
         question: "Software cannot working?",
@@ -63,7 +63,7 @@ const SUPPORT_CATEGORIES: FAQCategory[] = [
   },
   {
     title: "License",
-    icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/license.svg",
+    icon: "/images/support/license.svg",
     items: [
       {
         question: "What's the difference between the trial and the full version?",
@@ -84,7 +84,7 @@ const SUPPORT_CATEGORIES: FAQCategory[] = [
   },
   {
     title: "Payment & Refund",
-    icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/payment.svg",
+    icon: "/images/support/payment.svg",
     items: [
       {
         question: "What payment method do you accept?",
@@ -104,7 +104,7 @@ const SUPPORT_CATEGORIES: FAQCategory[] = [
   },
   {
     title: "Other FAQ",
-    icon: "https://idownergo.com/wp-content/themes/idownergo/assets/img/support/other.svg",
+    icon: "/images/support/other.svg",
     items: [
       {
         question: "How to change the automatic subscription?",

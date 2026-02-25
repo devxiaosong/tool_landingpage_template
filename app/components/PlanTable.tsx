@@ -31,7 +31,7 @@ export default function PlanTable({
   mainTitle,
   plans,
   features,
-  checkIconUrl = "https://idownergo.com/wp-content/themes/idownergo/assets/img/table/sure-only-icon.svg",
+  checkIconUrl = "/images/table/sure-only-icon.svg",
   checkIconAlt = "sure icon",
   emptySymbol = "—",
   headerSectionTitle = "Hot & Popular Features"
@@ -126,7 +126,7 @@ export default function PlanTable({
                         }`}
                       >
                         <svg width="24" height="24" className="overflow-hidden">
-                          <use href="https://idownergo.com/wp-content/themes/idownergo/assets/svg/common.svg#mac"></use>
+                          <use href="/images/svg/common.svg#mac"></use>
                         </svg>
                         <span className="flex flex-col ml-2">
                           <b className="text-sm lg:text-base font-bold">{plan.buttonText}</b>

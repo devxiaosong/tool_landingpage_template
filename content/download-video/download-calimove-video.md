@@ -3,7 +3,7 @@ title: "Top 2 Best Ways to Download Calimove Video for Free"
 excerpt: "Calimove is a popular platform offering various online courses, tutorials, and videos, perfect for learning new skills or exploring fitness challenges. Sometimes, you might want to download these videos for offline use, especially if you need them in places with limited internet access. In this guide, we'll show you two easy ways to download Calimove videos."
 author: "Matthew"
 authorBio: "An internet technology enthusiast, editor and content creator who spends most of his time bringing interesting, entertaining, original and well-written articles to people."
-avatar: "https://idownergo.com/wp-content/uploads/微信截图_20240911142921-150x150.jpg"
+avatar: "/images/uploads/avatar-matthew.jpg"
 date: "2024-11-30"
 categoryLabel: "Download Video"
 ---

@@ -45,7 +45,7 @@ export default function DownloadContent() {
           <video
             className="inline-block max-w-full rounded-lg shadow-lg"
             src="https://download.idownergo.com/iDownerGo_User_Guide_Video.mp4"
-            poster="https://idownergo.com/wp-content/themes/idownergo/assets/img/download/idownergo-cover.jpg"
+            poster="/images/download/idownergo-cover.jpg"
             controls
             playsInline
             width="560"

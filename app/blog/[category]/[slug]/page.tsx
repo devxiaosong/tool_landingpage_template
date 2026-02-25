@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props) {
   const post = getPost(params.category, params.slug);
   if (!post) return {};
   const ogImage = post.coverImage ||
-    "https://idownergo.com/wp-content/themes/idownergo/assets/img/og-default.png";
+    "/images/og-default.png";
   return {
     title: `${post.title} — iDownerGo Blog`,
     description: post.excerpt,

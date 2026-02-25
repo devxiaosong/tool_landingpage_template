@@ -66,7 +66,7 @@ export default function HeroBanner({
               className="bg-white border-2 border-white hover:bg-transparent h-16 lg:h-17 px-1 flex text-[#0C1C29] hover:text-white justify-center items-center rounded-[14px] transition-colors"
             >
               <svg width="30" height="30" className="flex-shrink-0">
-                <use href="https://idownergo.com/wp-content/themes/idownergo/assets/svg/common.svg#win"></use>
+                <use href="/images/svg/common.svg#win"></use>
               </svg>
               <span className="flex flex-col ml-3">
                 <strong className="lg:text-xl lg:leading-7">Free Download</strong>
@@ -81,7 +81,7 @@ export default function HeroBanner({
               className="bg-transparent hover:bg-white border-2 border-white h-16 lg:h-17 px-1 flex text-white hover:text-[#0C1C29] justify-center items-center rounded-[14px] transition-colors"
             >
               <svg width="30" height="30" className="flex-shrink-0">
-                <use href="https://idownergo.com/wp-content/themes/idownergo/assets/svg/common.svg#mac"></use>
+                <use href="/images/svg/common.svg#mac"></use>
               </svg>
               <span className="flex flex-col ml-3">
                 <strong className="lg:text-xl lg:leading-7">Free Download</strong>
@@ -96,7 +96,7 @@ export default function HeroBanner({
               width="20" 
               height="20" 
               className="mr-2" 
-              src="https://idownergo.com/wp-content/themes/idownergo/assets/img/onlyfans-downloader/safe.svg" 
+              src="/images/onlyfans-downloader/safe.svg" 
               alt="safe" 
             />
             <span className="text-white/60">{safetyText}</span>
