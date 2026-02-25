@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BASE_URL } from "@/lib/config";
+import { BASE_URL, SITE_DOMAIN, CONTACT_EMAIL } from "@/lib/config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -45,7 +45,7 @@ export default function TermsOfUsePage() {
               Please read this statement of privacy practices carefully before using our service
             </h2>
             <p>
-              idownergo.com ("Our", "We" or "Us") is comprised of web pages containing information
+              {SITE_DOMAIN} ("Our", "We" or "Us") is comprised of web pages containing information
               provided by us. Your access to the Site is offered to you conditioned on your
               acceptance of these Terms of Service together with our statement of privacy practices,
               which is incorporated herein by this reference and found at ("Terms"). If the terms of
@@ -129,11 +129,11 @@ export default function TermsOfUsePage() {
             <p>
               To the maximum extent permitted by applicable law, the Site and Content are provided
               "AS IS," "WITH ALL FAULTS," and "AS AVAILABLE" and the entire risk of use and
-              performance, remains with you. idownergo.com, its suppliers, and licensors DO NOT MAKE
+              performance, remains with you. {SITE_DOMAIN}, its suppliers, and licensors DO NOT MAKE
               ANY representations, warranties, or conditions, express, implied, or statutory and
               hereby disclaim any implied warranties of merchantability, merchantable quality,
               fitness for a particular purpose, title, quiet Enjoyment, or non-infringement. In
-              particular, idownergo.com, its suppliers, and licensors make no warranty that the Site
+              particular, {SITE_DOMAIN}, its suppliers, and licensors make no warranty that the Site
               or Content:
             </p>
             <ul className="list-none space-y-2 pl-2">
@@ -172,10 +172,10 @@ export default function TermsOfUsePage() {
               If you have any questions, complaints, or claims with respect to the Services, you
               may contact us at:{" "}
               <a
-                href="mailto:contact@idownergo.com"
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="text-[#7A32FD] hover:underline"
               >
-                contact@idownergo.com
+                {CONTACT_EMAIL}
               </a>
             </p>
             <p className="text-sm text-gray-500">Comply with the law HK</p>

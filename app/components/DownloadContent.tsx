@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { DOWNLOAD_BASE_URL } from "@/lib/config";
 
 export default function DownloadContent() {
   const [downloading, setDownloading] = useState(false);
@@ -10,7 +11,7 @@ export default function DownloadContent() {
     const timer = setTimeout(() => {
       setDownloading(true);
       // 模拟下载（实际项目中应该触发真实的下载链接）
-      // window.location.href = "https://download.idownergo.com/idownergo.dmg";
+      // window.location.href = `${DOWNLOAD_BASE_URL}/idownergo.dmg`;
     }, 2000);
 
     return () => clearTimeout(timer);
@@ -18,7 +19,7 @@ export default function DownloadContent() {
 
   const handleManualDownload = () => {
     // 手动下载
-    window.location.href = "https://download.idownergo.com/idownergo.dmg";
+    window.location.href = `${DOWNLOAD_BASE_URL}/idownergo.dmg`;
   };
 
   return (
@@ -44,7 +45,7 @@ export default function DownloadContent() {
         <div className="flex justify-center">
           <video
             className="inline-block max-w-full rounded-lg shadow-lg"
-            src="https://download.idownergo.com/iDownerGo_User_Guide_Video.mp4"
+            src={`${DOWNLOAD_BASE_URL}/iDownerGo_User_Guide_Video.mp4`}
             poster="/images/download/idownergo-cover.jpg"
             controls
             playsInline

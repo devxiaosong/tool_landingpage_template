@@ -1,16 +1,18 @@
+import { SITE_DOMAIN, CONTACT_EMAIL, BASE_URL } from "@/lib/config";
+
 export default function PrivacyPolicyContent() {
   return (
     <section className="py-16 md:py-20 bg-white">
       <div className="container mx-auto max-w-[1310px] px-4 text-left">
         {/* Introduction */}
         <p className="text-[#333333] text-base md:text-lg leading-6">
-          Here at iDownerGo Office, doing business as idownergo.com (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; &quot;our&quot;), we know that our users care about how your personal information is used and shared. We take your privacy seriously. Please read the following to learn more about our Privacy Policy.
+          Here at iDownerGo Office, doing business as {SITE_DOMAIN} (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; &quot;our&quot;), we know that our users care about how your personal information is used and shared. We take your privacy seriously. Please read the following to learn more about our Privacy Policy.
         </p>
         <p className="text-[#333333] text-base md:text-lg leading-6 mt-5">
           By visiting or using the Services in any manner, you acknowledge that you accept the practices and policies outlined in this Privacy Policy, and you hereby consent that we will collect, use, process and share your information as described herein.
         </p>
         <p className="text-[#333333] text-base md:text-lg leading-6 mt-5">
-          Any capitalized terms used herein without definition shall have the meaning given to them in the End User License Agreement: www.idownergo.com/license-agreement.
+          Any capitalized terms used herein without definition shall have the meaning given to them in the End User License Agreement: {BASE_URL}/license-agreement.
         </p>
 
         {/* PRIVACY PRINCIPLES */}
@@ -40,7 +42,7 @@ export default function PrivacyPolicyContent() {
           This Privacy Policy covers our treatment of information that we gather when you are accessing or using our Services. This policy does not apply to the practices of companies that we do not own or control (including, without limitation, the third party content providers from whom you may receive content through the Services), or to individuals that we do not employ or manage.
         </p>
         <p className="text-[#333333] text-base md:text-lg leading-6 mt-5">
-          Company does not knowingly collect or solicit Personal Information from anyone under the age of 13 or knowingly allow such persons to register. If you are under 13, please do not attempt to register for the Website or send any information about yourself to us, including your name, address, telephone number, or email address. No one under age 13 may provide any personal information to Company or on the Website. In the event that we learn that we have collected personal information from a child under age 13 without verification of parental consent, we will delete that information as quickly as possible. If you believe that we might have any information from or about a child under 13, please contact us at contact@idownergo.com
+          Company does not knowingly collect or solicit Personal Information from anyone under the age of 13 or knowingly allow such persons to register. If you are under 13, please do not attempt to register for the Website or send any information about yourself to us, including your name, address, telephone number, or email address. No one under age 13 may provide any personal information to Company or on the Website. In the event that we learn that we have collected personal information from a child under age 13 without verification of parental consent, we will delete that information as quickly as possible. If you believe that we might have any information from or about a child under 13, please contact us at {CONTACT_EMAIL}
         </p>
 
         {/* WHAT INFORMATION DOES iDownerGo.COM COLLECT? */}

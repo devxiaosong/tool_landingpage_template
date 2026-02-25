@@ -1,3 +1,5 @@
+import { CONTACT_EMAIL } from "@/lib/config";
+
 interface Props {
   title?: string;
   description?: string;
@@ -9,7 +11,7 @@ export default function ContactCard({
   title = "Still need help?",
   description = "Submit your questions. One of our specialists will be reaching you soon.",
   buttonText = "Contact Us",
-  contactEmail = "contact@idownergo.com",
+  contactEmail = CONTACT_EMAIL,
 }: Props) {
   return (
     <section id="still-need-help" className="py-20 bg-white">

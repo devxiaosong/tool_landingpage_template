@@ -1,3 +1,5 @@
+import { CONTACT_EMAIL } from "@/lib/config";
+
 export default function RefundPolicyContent() {
   return (
     <section className="py-16 md:py-20 bg-white">
@@ -72,7 +74,7 @@ export default function RefundPolicyContent() {
           How to Request a Refund?
         </h2>
         <p className="text-[#333333] text-sm md:text-base leading-[22px] md:leading-[26px] mt-2.5">
-          To request a refund, send and email to contact@idownergo.com. Refunds are processed within 3-5 days. Once the refund is issued, the account for the product will be deactivated.
+          To request a refund, send and email to {CONTACT_EMAIL}. Refunds are processed within 3-5 days. Once the refund is issued, the account for the product will be deactivated.
         </p>
       </div>
     </section>

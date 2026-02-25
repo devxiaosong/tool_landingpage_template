@@ -122,7 +122,6 @@ export default function SupportPageDE() {
         title="Noch Fragen?"
         description="Senden Sie uns Ihre Fragen. Einer unserer Spezialisten wird sich bald bei Ihnen melden."
         buttonText="Kontaktieren"
-        contactEmail="contact@idownergo.com"
       />
       <Footer />
     </div>
