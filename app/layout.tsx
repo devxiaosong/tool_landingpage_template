@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description:
     "iDownerGo is a professional video downloader supporting Netflix, OnlyFans, Amazon Prime, Disney+ and 10,000+ sites. Download videos in 1080p HD with one click.",
   metadataBase: new URL("https://idownergo.com"),
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     siteName: "iDownerGo",
     type: "website",
