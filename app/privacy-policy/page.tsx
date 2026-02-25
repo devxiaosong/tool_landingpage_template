@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PrivacyPolicyContent from "../components/PrivacyPolicyContent";
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Read iDownerGo's Privacy Policy. Learn how we collect, use, and protect your personal information when you use our video downloader software.",
   alternates: {
-    canonical: "https://idownergo.com/privacy-policy/",
+    canonical: `${BASE_URL}/privacy-policy/`,
   },
   robots: {
     index: true,

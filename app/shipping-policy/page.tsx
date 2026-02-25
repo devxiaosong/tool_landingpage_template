@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "iDownerGo delivers registration codes digitally via email within 24 hours of purchase. No physical shipping involved. Digital products accessible worldwide.",
   alternates: {
-    canonical: "https://idownergo.com/shipping-policy/",
+    canonical: `${BASE_URL}/shipping-policy/`,
   },
   robots: {
     index: true,

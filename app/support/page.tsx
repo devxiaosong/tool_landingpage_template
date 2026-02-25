@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SupportContent, { FAQCategory } from "../components/SupportContent";
@@ -9,18 +10,18 @@ export const metadata: Metadata = {
   description:
     "Get help with iDownerGo. Find answers to common questions about product usage, license, payment, and refund policy. Our support team is here to help.",
   alternates: {
-    canonical: "https://idownergo.com/support/",
+    canonical: `${BASE_URL}/support/`,
     languages: {
-      "en": "https://idownergo.com/support/",
-      "de": "https://idownergo.com/de/support",
-      "x-default": "https://idownergo.com/support/",
+      "en": `${BASE_URL}/support/`,
+      "de": `${BASE_URL}/de/support`,
+      "x-default": `${BASE_URL}/support/`,
     },
   },
   openGraph: {
     title: "Support — iDownerGo Help Center",
     description:
       "Get help with iDownerGo. Find answers to common questions about product usage, license, payment, and refund policy.",
-    url: "https://idownergo.com/support/",
+    url: `${BASE_URL}/support/`,
   },
 };
 

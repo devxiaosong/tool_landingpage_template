@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Read iDownerGo's End User License Agreement (EULA). Understand the terms and conditions for downloading, installing, and using iDownerGo software.",
   alternates: {
-    canonical: "https://idownergo.com/license-agreement/",
+    canonical: `${BASE_URL}/license-agreement/`,
   },
   robots: {
     index: true,

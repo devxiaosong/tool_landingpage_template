@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { BASE_URL } from "@/lib/config";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import BlogListContent from "../../components/BlogListContent";
@@ -21,12 +22,12 @@ export async function generateMetadata({ params }: Props) {
     title: `${cat.label} — iDownerGo Blog`,
     description: `Browse all ${cat.label} articles and guides on iDownerGo Blog.`,
     alternates: {
-      canonical: `https://idownergo.com/blog/${params.category}/`,
+      canonical: `${BASE_URL}/blog/${params.category}/`,
     },
     openGraph: {
       title: `${cat.label} — iDownerGo Blog`,
       description: `Browse all ${cat.label} articles and guides on iDownerGo Blog.`,
-      url: `https://idownergo.com/blog/${params.category}/`,
+      url: `${BASE_URL}/blog/${params.category}/`,
       images: [
         {
           url: "/images/og-default.png",

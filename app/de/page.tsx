@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroBanner from "../components/HeroBanner";
@@ -15,18 +16,18 @@ export const metadata: Metadata = {
   description:
     "Lade OnlyFans-Videos deiner Lieblingsersteller in 1080p-Qualität mit einem Klick herunter und genieße sie offline auf jedem Gerät.",
   alternates: {
-    canonical: "https://idownergo.com/de",
+    canonical: `${BASE_URL}/de`,
     languages: {
-      "en": "https://idownergo.com/",
-      "de": "https://idownergo.com/de",
-      "x-default": "https://idownergo.com/",
+      "en": `${BASE_URL}/`,
+      "de": `${BASE_URL}/de`,
+      "x-default": `${BASE_URL}/`,
     },
   },
   openGraph: {
     title: "iDownerGo OnlyFans Video Downloader — Kostenloser Download",
     description:
       "Lade OnlyFans-Videos deiner Lieblingsersteller in 1080p-Qualität mit einem Klick herunter und genieße sie offline auf jedem Gerät.",
-    url: "https://idownergo.com/de",
+    url: `${BASE_URL}/de`,
     images: [
       {
         url: "/images/onlyfans-downloader/onlyfans-downloader.png",

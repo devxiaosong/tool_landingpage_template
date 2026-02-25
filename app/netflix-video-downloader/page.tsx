@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroBanner from "../components/HeroBanner";
@@ -8,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Download Netflix videos, movies and TV shows in 1080p HD quality for offline viewing. Supports MP4/MKV output, batch download, and subtitle preservation.",
   alternates: {
-    canonical: "https://idownergo.com/netflix-video-downloader/",
+    canonical: `${BASE_URL}/netflix-video-downloader/`,
   },
   openGraph: {
     title: "iDownerGo Netflix Video Downloader — Download Netflix in 1080p",
     description:
       "Download Netflix videos, movies and TV shows in 1080p HD quality for offline viewing. Supports MP4/MKV output, batch download, and subtitle preservation.",
-    url: "https://idownergo.com/netflix-video-downloader/",
+    url: `${BASE_URL}/netflix-video-downloader/`,
     images: [
       {
         url: "/images/netflix-downloader/netflix-video-downloader.png",

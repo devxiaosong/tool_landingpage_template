@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Learn how iDownerGo uses cookies, web beacons and similar technologies on our website and mobile app. Find out how to manage or block cookies in your browser.",
   alternates: {
-    canonical: "https://idownergo.com/cookie-policy/",
+    canonical: `${BASE_URL}/cookie-policy/`,
   },
   robots: {
     index: true,

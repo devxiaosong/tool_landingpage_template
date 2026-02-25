@@ -4,19 +4,20 @@ import BlogListContent from "../components/BlogListContent";
 import { getAllPosts, getAllCategories } from "@/lib/posts";
 
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Blog — iDownerGo",
   description:
     "Tips, guides, and tutorials on downloading and converting videos from your favorite platforms.",
   alternates: {
-    canonical: "https://idownergo.com/blog/",
+    canonical: `${BASE_URL}/blog/`,
   },
   openGraph: {
     title: "Blog — iDownerGo",
     description:
       "Tips, guides, and tutorials on downloading and converting videos from your favorite platforms.",
-    url: "https://idownergo.com/blog/",
+    url: `${BASE_URL}/blog/`,
     images: [
       {
         url: "/images/og-default.png",

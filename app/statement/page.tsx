@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/lib/config";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "iDownerGo is for personal use only and should not be used for sharing or pirating. Please comply with the terms of service and enjoy your paid content responsibly.",
   alternates: {
-    canonical: "https://idownergo.com/statement/",
+    canonical: `${BASE_URL}/statement/`,
   },
   robots: {
     index: true,

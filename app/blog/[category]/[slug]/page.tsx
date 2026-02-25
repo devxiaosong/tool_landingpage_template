@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { BASE_URL } from "@/lib/config";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import ArticleHeroBanner from "../../../components/ArticleHeroBanner";
@@ -26,12 +27,12 @@ export async function generateMetadata({ params }: Props) {
     title: `${post.title} — iDownerGo Blog`,
     description: post.excerpt,
     alternates: {
-      canonical: `https://idownergo.com/blog/${params.category}/${params.slug}/`,
+      canonical: `${BASE_URL}/blog/${params.category}/${params.slug}/`,
     },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://idownergo.com/blog/${params.category}/${params.slug}/`,
+      url: `${BASE_URL}/blog/${params.category}/${params.slug}/`,
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
