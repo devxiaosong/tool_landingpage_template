@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
 const translations = {
@@ -53,11 +52,9 @@ const translations = {
 export default function Footer() {
   const pathname = usePathname();
   const router = useRouter();
-  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
 
   const isGerman = pathname.startsWith("/de");
   const t = isGerman ? translations.de : translations.en;
-  const currentLanguage = isGerman ? "Deutsch" : "English";
 
   // Detect if currently on a support page
   const isOnSupport =
@@ -66,7 +63,6 @@ export default function Footer() {
     pathname.startsWith("/de/support/");
 
   const handleLanguageSelect = (code: string) => {
-    setIsLanguageOpen(false);
     if (code === "en") {
       router.push(isOnSupport ? "/support" : "/");
     } else if (code === "de") {
@@ -88,7 +84,7 @@ export default function Footer() {
             <img
               src="/images/logo/iDownerGo.svg"
               alt="iDownerGo"
-              className="w-15 h-15"
+              className="w-14 h-14"
             />
             <a href="/">
               <h2 className="text-[30px] font-bold text-white mt-2">
@@ -142,49 +138,24 @@ export default function Footer() {
           </div>
 
           {/* Language Selector */}
-          <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col items-start lg:items-center mt-8 lg:mt-0">
-            <div>
-              <div className="text-xl text-white font-bold mb-5">{t.language}</div>
-              <div className="relative inline-block">
-                <button
-                  onClick={() => setIsLanguageOpen(!isLanguageOpen)}
-                  className="relative flex items-center w-40 md:w-55 h-9.5 bg-white/40 rounded-[18px] cursor-pointer px-5 text-white"
-                >
-                  <span className="text-base">{currentLanguage}</span>
-                  <svg
-                    className={`absolute right-5 w-4 h-4 transition-transform ${
-                      isLanguageOpen ? "rotate-180" : ""
+          <div className="w-1/2 lg:w-1/4 relative z-10 lg:text-center">
+            <dl className="inline-block text-left">
+              <dt className="text-xl text-white font-bold pb-2.5">{t.language}</dt>
+              {languages.map((lang) => (
+                <dd key={lang.code} className="mt-2.5">
+                  <button
+                    onClick={() => handleLanguageSelect(lang.code)}
+                    className={`text-sm hover:underline cursor-pointer ${
+                      (lang.code === "de") === isGerman
+                        ? "text-white"
+                        : "text-white opacity-70"
                     }`}
-                    fill="white"
-                    viewBox="0 0 16 16"
                   >
-                    <path d="M7.996,9.69308475 L2.15274576,3.84983051 C1.72020339,3.41728814 1.02813559,3.41728814 0.59559322,3.84983051 C0.163050847,4.28237288 0.163050847,4.97444068 0.59559322,5.40698305 L7.06013559,11.8715254 C7.09945763,11.9344407 7.14664407,11.9894915 7.20169492,12.0445424 C7.42189831,12.2647458 7.70501695,12.3748475 7.996,12.3669831 C8.27911864,12.3669831 8.57010169,12.2647458 8.79030508,12.0445424 C8.84535593,11.9894915 8.89254237,11.9344407 8.93186441,11.8715254 L15.3964068,5.40698305 C15.6087458,5.19464407 15.7188475,4.91152542 15.7188475,4.62840678 C15.7188475,4.34528814 15.6087458,4.06216949 15.3964068,3.84983051 C14.9638644,3.41728814 14.2717966,3.41728814 13.8392542,3.84983051 L7.996,9.69308475 Z" />
-                  </svg>
-                </button>
-
-                {/* Language Dropdown */}
-                {isLanguageOpen && (
-                  <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 z-10">
-                    <div className="bg-white rounded-[10px] py-2.5 shadow-lg">
-                      {languages.map((lang) => (
-                        <button
-                          key={lang.code}
-                          onClick={() => handleLanguageSelect(lang.code)}
-                          className={`flex items-center gap-2.5 px-3 py-1.5 hover:bg-gray-200 cursor-pointer w-full text-left text-sm ${
-                            currentLanguage === lang.name
-                              ? "text-[#2A6DF4] font-semibold"
-                              : "text-[#061230]"
-                          }`}
-                        >
-                          <span className="text-xl">{lang.flag}</span>
-                          <span>{lang.name}</span>
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
+                    {lang.flag} {lang.name}
+                  </button>
+                </dd>
+              ))}
+            </dl>
           </div>
         </div>
       </div>
