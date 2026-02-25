@@ -6,7 +6,7 @@ export default function PrivacyPolicyContent() {
       <div className="container mx-auto max-w-[1310px] px-4 text-left">
         {/* Introduction */}
         <p className="text-[#333333] text-base md:text-lg leading-6">
-          Here at iDownerGo Office, doing business as {SITE_DOMAIN} (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; &quot;our&quot;), we know that our users care about how your personal information is used and shared. We take your privacy seriously. Please read the following to learn more about our Privacy Policy.
+          Here at MassLoader Office, doing business as {SITE_DOMAIN} (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; &quot;our&quot;), we know that our users care about how your personal information is used and shared. We take your privacy seriously. Please read the following to learn more about our Privacy Policy.
         </p>
         <p className="text-[#333333] text-base md:text-lg leading-6 mt-5">
           By visiting or using the Services in any manner, you acknowledge that you accept the practices and policies outlined in this Privacy Policy, and you hereby consent that we will collect, use, process and share your information as described herein.
@@ -45,9 +45,9 @@ export default function PrivacyPolicyContent() {
           Company does not knowingly collect or solicit Personal Information from anyone under the age of 13 or knowingly allow such persons to register. If you are under 13, please do not attempt to register for the Website or send any information about yourself to us, including your name, address, telephone number, or email address. No one under age 13 may provide any personal information to Company or on the Website. In the event that we learn that we have collected personal information from a child under age 13 without verification of parental consent, we will delete that information as quickly as possible. If you believe that we might have any information from or about a child under 13, please contact us at {CONTACT_EMAIL}
         </p>
 
-        {/* WHAT INFORMATION DOES iDownerGo.COM COLLECT? */}
+        {/* WHAT INFORMATION DOES MassLoader.COM COLLECT? */}
         <h2 className="text-[#333333] text-2xl md:text-[26px] leading-9 font-bold mt-5">
-          WHAT INFORMATION DOES iDownerGo.COM COLLECT?
+          WHAT INFORMATION DOES MassLoader.COM COLLECT?
         </h2>
         <dl className="text-[#333333] text-base md:text-lg leading-6 mt-4">
           <dt>

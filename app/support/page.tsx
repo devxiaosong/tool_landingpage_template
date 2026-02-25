@@ -6,9 +6,9 @@ import SupportContent, { FAQCategory } from "../components/SupportContent";
 import ContactCard from "../components/ContactCard";
 
 export const metadata: Metadata = {
-  title: "Support — iDownerGo Help Center",
+  title: "Support — MassLoader Help Center",
   description:
-    "Get help with iDownerGo. Find answers to common questions about product usage, license, payment, and refund policy. Our support team is here to help.",
+    "Get help with MassLoader. Find answers to common questions about product usage, license, payment, and refund policy. Our support team is here to help.",
   alternates: {
     canonical: `${BASE_URL}/support/`,
     languages: {
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Support — iDownerGo Help Center",
+    title: "Support — MassLoader Help Center",
     description:
-      "Get help with iDownerGo. Find answers to common questions about product usage, license, payment, and refund policy.",
+      "Get help with MassLoader. Find answers to common questions about product usage, license, payment, and refund policy.",
     url: `${BASE_URL}/support/`,
   },
 };
@@ -99,7 +99,7 @@ const SUPPORT_CATEGORIES: FAQCategory[] = [
       {
         question: "What is your refund policy?",
         answer:
-          "iDownerGo offers a 30-day money back guarantee. If your software does not work properly or there are errors while running, and the problem cannot be solved within an acceptable time, we offer a 30-day money-back guarantee.",
+          "MassLoader offers a 30-day money back guarantee. If your software does not work properly or there are errors while running, and the problem cannot be solved within an acceptable time, we offer a 30-day money-back guarantee.",
       },
     ],
   },

@@ -7,14 +7,14 @@ import type { Metadata } from "next";
 import { BASE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Blog — iDownerGo",
+  title: "Blog — MassLoader",
   description:
     "Tips, guides, and tutorials on downloading and converting videos from your favorite platforms.",
   alternates: {
     canonical: `${BASE_URL}/blog/`,
   },
   openGraph: {
-    title: "Blog — iDownerGo",
+    title: "Blog — MassLoader",
     description:
       "Tips, guides, and tutorials on downloading and converting videos from your favorite platforms.",
     url: `${BASE_URL}/blog/`,
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
         url: "/images/og-default.png",
         width: 1200,
         height: 630,
-        alt: "iDownerGo Blog",
+        alt: "MassLoader Blog",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog — iDownerGo",
+    title: "Blog — MassLoader",
     description:
       "Tips, guides, and tutorials on downloading and converting videos from your favorite platforms.",
     images: [

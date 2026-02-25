@@ -36,7 +36,7 @@ export default function Header() {
             <span className="text-white text-xl font-bold">↓</span>
           </div>
           <span className="ml-2 text-sm md:text-[22px] font-bold text-[#333333]">
-            iDownerGo
+            MassLoader
           </span>
         </a>
 

@@ -4,9 +4,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "End User License Agreement — iDownerGo",
+  title: "End User License Agreement — MassLoader",
   description:
-    "Read iDownerGo's End User License Agreement (EULA). Understand the terms and conditions for downloading, installing, and using iDownerGo software.",
+    "Read MassLoader's End User License Agreement (EULA). Understand the terms and conditions for downloading, installing, and using MassLoader software.",
   alternates: {
     canonical: `${BASE_URL}/license-agreement/`,
   },
@@ -43,7 +43,7 @@ export default function LicenseAgreementPage() {
 
             <p>
               This End User License Agreement (Agreement or License or EULA) is between the end
-              user (hereinafter referred to as You or Licensee), and iDownerGo software, the
+              user (hereinafter referred to as You or Licensee), and MassLoader software, the
               developer and owner of the program and software (hereinafter referred to as Software).
             </p>
             <p>
@@ -57,7 +57,7 @@ export default function LicenseAgreementPage() {
               Please read this agreement carefully before downloading or installing the software.
               Top attention should be paid to such clauses including but not limited to Article 4,
               8, 9, 10 in special font. If you disagree with or have any questions concerning this
-              END USER LICENSE AGREEMENT (EULA), please contact iDownerGo software. Any installing,
+              END USER LICENSE AGREEMENT (EULA), please contact MassLoader software. Any installing,
               copying, accessing, or using the Licensed Software by you (the "Licensee") constitutes
               an acceptance of, and a promise to comply with, all the terms and conditions of this
               EULA.
@@ -66,20 +66,20 @@ export default function LicenseAgreementPage() {
             <h2 className="text-xl font-bold text-gray-900 mt-8">1. LICENSED SOFTWARE</h2>
             <p>
               Licensed software includes but not limited to all the products whose name contains
-              iDownerGo software.
+              MassLoader software.
             </p>
 
             <h2 className="text-xl font-bold text-gray-900 mt-8">2. GRANT OF LICENSE</h2>
             <p>
-              Subject to the terms and conditions of this Agreement, iDownerGo hereby grants you
+              Subject to the terms and conditions of this Agreement, MassLoader hereby grants you
               (an individual) the limited, revocable, personal, non-exclusive, and non-transferable
               right to download, install and activate the Software on two separated computers solely
               for your personal, private and non-commercial use, unless you have purchased a
-              commercial license from iDownerGo. Sharing the Software with others, or allowing
+              commercial license from MassLoader. Sharing the Software with others, or allowing
               others to view the contents of this Software, is in violation of the License. You may
               not make the Software available over a network, or in any way provide the Software to
-              multiple users, unless you have purchased a multi-user license from iDownerGo in
-              advance. iDownerGo reserves all rights not expressly granted to You in this Agreement.
+              multiple users, unless you have purchased a multi-user license from MassLoader in
+              advance. MassLoader reserves all rights not expressly granted to You in this Agreement.
             </p>
 
             <h2 className="text-xl font-bold text-gray-900 mt-8">3. COPYRIGHT</h2>
@@ -87,7 +87,7 @@ export default function LicenseAgreementPage() {
               All title and copyrights in and to the SOFTWARE (including but not limited to any
               images, photographs, animations, video, audio, music, and text incorporated into the
               SOFTWARE), the accompanying printed materials, and any copies of the SOFTWARE are
-              owned by iDownerGo or its suppliers. The SOFTWARE is protected by copyright laws and
+              owned by MassLoader or its suppliers. The SOFTWARE is protected by copyright laws and
               international treaty provisions. Therefore, you must treat the SOFTWARE like any other
               copyrighted material, and may not remove or conceal any proprietary notices, labels or
               marks from the Software.
@@ -122,38 +122,38 @@ export default function LicenseAgreementPage() {
 
             <h2 className="text-xl font-bold text-gray-900 mt-8">5. COVER CD</h2>
             <p>
-              The reproduction and distribution of iDownerGo Software (evaluation copy only) in
+              The reproduction and distribution of MassLoader Software (evaluation copy only) in
               various Cover CDs published by associated magazines are allowed. However a copy of
-              magazine with CD is required to be sent to iDownerGo.
+              magazine with CD is required to be sent to MassLoader.
             </p>
 
             <h2 className="text-xl font-bold text-gray-900 mt-8">6. PROTECTION OF PRIVACY</h2>
             <p>
-              iDownerGo respects and protects your privacy, and will not share, sell, use or
+              MassLoader respects and protects your privacy, and will not share, sell, use or
               disclose your personal information to any third-parties, unless your written agreement
               under related law and regulation.
             </p>
             <p>
-              Under the following conditions, iDownerGo will disclose your personal information
+              Under the following conditions, MassLoader will disclose your personal information
               based on your will or the laws. You will be responsible for the resulting problems.
             </p>
             <ol className="list-decimal list-inside space-y-2 pl-2">
               <li>Obtain your prior authorization;</li>
               <li>Reveal your personal information to offer products and services requested by you;</li>
               <li>According to relevant laws, regulations or requirements of the relevant government agencies;</li>
-              <li>To protect iDownerGo's legal rights and interests;</li>
+              <li>To protect MassLoader's legal rights and interests;</li>
               <li>You violate the provisions of the EULA;</li>
             </ol>
 
             <h2 className="text-xl font-bold text-gray-900 mt-8">7. TERMINATION</h2>
             <p>
               This Agreement is effective until terminated. You may terminate it at any time by
-              destroying the Software, together with all copies thereof. iDownerGo shall be entitled
+              destroying the Software, together with all copies thereof. MassLoader shall be entitled
               to terminate this EULA immediately upon serving written notice on the Licensee in the
               following circumstances; if Licensee commits a material breach of any of its
               obligations under this EULA which is not capable of remedy or if Licensee commits a
               material breach of any of its obligations under this EULA which is not remedied within
-              fifteen (15) calendar days after receipt of a notice from iDownerGo. Termination of
+              fifteen (15) calendar days after receipt of a notice from MassLoader. Termination of
               this EULA shall not affect any rights, obligations or liabilities of either party
               which have accrued before termination or which are intended to continue to have effect
               after termination.
@@ -161,7 +161,7 @@ export default function LicenseAgreementPage() {
 
             <h2 className="text-xl font-bold text-gray-900 mt-8">8. NO OTHER WARRANTIES</h2>
             <p className="uppercase text-sm leading-7">
-              iDownerGo does not warrant that the software is error free. iDownerGo disclaims all
+              MassLoader does not warrant that the software is error free. MassLoader disclaims all
               other warranties with respect to the software, either express or implied, including
               but not limited to implied warranties of merchantability, fitness for a particular
               purpose and noninfringement of third party rights. Some jurisdictions do not allow the
@@ -176,15 +176,15 @@ export default function LicenseAgreementPage() {
               that the entire risk as to satisfactory quality, performance, accuracy and effort is
               with you. Except for the limited warranty on media set forth above and to the maximum
               extent permitted by applicable law, the software is provided "as is", with all faults
-              and without warranty of any kind, and iDownerGo hereby disclaim all warranties and
+              and without warranty of any kind, and MassLoader hereby disclaim all warranties and
               conditions with respect to the software, either express, implied or statutory,
               including, but not limited to, the implied warranties and/or conditions of
               merchantability, of satisfactory quality, of fitness for a particular purpose, of
-              accuracy, of quiet enjoyment, and non-infringement of third party rights. iDownerGo
+              accuracy, of quiet enjoyment, and non-infringement of third party rights. MassLoader
               does not warrant against interference with your enjoyment of the software, that the
               functions contained in the software will meet your requirements, that the operation of
               the software will be uninterrupted or error-free, or that defects in the software will
-              be corrected. No oral or written information or advice given by iDownerGo shall create
+              be corrected. No oral or written information or advice given by MassLoader shall create
               a warranty. Should the software prove defective, you assume the entire cost of all
               necessary servicing, repair or correction. Some jurisdictions do not allow the
               exclusion of implied warranties or limitations on applicable statutory rights of a
@@ -230,7 +230,7 @@ export default function LicenseAgreementPage() {
 
             <h2 className="text-xl font-bold text-gray-900 mt-8">12. MISCELLANEOUS</h2>
             <p>
-              iDownerGo does not allow you to utilize our SOFTWARE to do anything that violates the
+              MassLoader does not allow you to utilize our SOFTWARE to do anything that violates the
               local law or infringe any party's rights or intellectual property. If you utilize our
               SOFTWARE to do the illegal activity or infringe other's rights, the consequent result
               shall be on your own responsibility. If you disagree with this item, please don't
@@ -256,10 +256,10 @@ export default function LicenseAgreementPage() {
               China Sub for the final Arbitration.
             </p>
             <p>
-              iDownerGo may update this agreement from time to time, you are considered to accept
+              MassLoader may update this agreement from time to time, you are considered to accept
               such update if you keep using the Software. If you can not accept the updated
               agreement, you may choose to terminate this agreement. Under such circumstance,
-              iDownerGo will not bear any liabilities or expenses to you.
+              MassLoader will not bear any liabilities or expenses to you.
             </p>
             <p className="uppercase text-sm leading-7 font-semibold">
               Acknowledgment: By installing the software, you acknowledge that you have read and

@@ -6,7 +6,7 @@ import SupportContent, { FAQCategory } from "../../components/SupportContent";
 import ContactCard from "../../components/ContactCard";
 
 export const metadata: Metadata = {
-  title: "Support-Center — iDownerGo",
+  title: "Support-Center — MassLoader",
   description:
     "Unsere Support-Spezialisten helfen Ihnen gerne weiter. Finden Sie Antworten auf häufig gestellte Fragen zu Produkt, Lizenz, Zahlung und mehr.",
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Support-Center — iDownerGo",
+    title: "Support-Center — MassLoader",
     description:
       "Unsere Support-Spezialisten helfen Ihnen gerne weiter. Finden Sie Antworten auf häufig gestellte Fragen zu Produkt, Lizenz, Zahlung und mehr.",
     url: `${BASE_URL}/de/support`,
@@ -90,7 +90,7 @@ const SUPPORT_CATEGORIES: FAQCategory[] = [
       {
         question: "Wie lautet Ihre Rückgaberichtlinie?",
         answer:
-          "iDownerGo bietet eine 30-tägige Geld-zurück-Garantie. Wenn Ihre Software nicht ordnungsgemäß funktioniert oder während der Ausführung Fehler auftreten und das Problem nicht innerhalb einer akzeptablen Zeit gelöst werden kann, bieten wir eine 30-tägige Geld-zurück-Garantie.",
+          "MassLoader bietet eine 30-tägige Geld-zurück-Garantie. Wenn Ihre Software nicht ordnungsgemäß funktioniert oder während der Ausführung Fehler auftreten und das Problem nicht innerhalb einer akzeptablen Zeit gelöst werden kann, bieten wir eine 30-tägige Geld-zurück-Garantie.",
       },
     ],
   },

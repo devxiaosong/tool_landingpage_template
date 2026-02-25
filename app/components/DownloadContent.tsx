@@ -11,7 +11,7 @@ export default function DownloadContent() {
     const timer = setTimeout(() => {
       setDownloading(true);
       // 模拟下载（实际项目中应该触发真实的下载链接）
-      // window.location.href = `${DOWNLOAD_BASE_URL}/idownergo.dmg`;
+      // window.location.href = `${DOWNLOAD_BASE_URL}/massloader.dmg`;
     }, 2000);
 
     return () => clearTimeout(timer);
@@ -19,7 +19,7 @@ export default function DownloadContent() {
 
   const handleManualDownload = () => {
     // 手动下载
-    window.location.href = `${DOWNLOAD_BASE_URL}/idownergo.dmg`;
+    window.location.href = `${DOWNLOAD_BASE_URL}/massloader.dmg`;
   };
 
   return (
@@ -27,7 +27,7 @@ export default function DownloadContent() {
       <div className="container mx-auto max-w-[1310px] px-4 py-20 text-center">
         {/* Main Title */}
         <h1 className="text-3xl md:text-5xl leading-tight mb-2 text-[#333333]">
-          Downloading iDownerGo for Mac...
+          Downloading MassLoader for Mac...
         </h1>
 
         {/* Subtitle with link */}
@@ -45,8 +45,8 @@ export default function DownloadContent() {
         <div className="flex justify-center">
           <video
             className="inline-block max-w-full rounded-lg shadow-lg"
-            src={`${DOWNLOAD_BASE_URL}/iDownerGo_User_Guide_Video.mp4`}
-            poster="/images/download/idownergo-cover.jpg"
+            src={`${DOWNLOAD_BASE_URL}/MassLoader_User_Guide_Video.mp4`}
+            poster="/images/download/massloader-cover.jpg"
             controls
             playsInline
             width="560"

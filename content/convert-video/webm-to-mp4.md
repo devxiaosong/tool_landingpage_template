@@ -12,13 +12,13 @@ WebM is an open-source video format developed by Google, commonly used for HTML5
 
 Converting WebM to MP4 gives you a universally compatible file that plays everywhere. Here are 5 straightforward methods.
 
-## Method 1: iDownerGo — Batch Convert with High Quality
+## Method 1: MassLoader — Batch Convert with High Quality
 
-iDownerGo makes it easy to convert WebM files to MP4, including batch processing for multiple files simultaneously.
+MassLoader makes it easy to convert WebM files to MP4, including batch processing for multiple files simultaneously.
 
 **Steps:**
 
-1. Launch iDownerGo and navigate to the **Convert** section
+1. Launch MassLoader and navigate to the **Convert** section
 2. Click **Add Files** and select your WebM file(s)
 3. Select **MP4** as the output format
 4. Choose resolution (keep original for best quality)
@@ -118,4 +118,4 @@ For single files under 1-2GB, online converters are the quickest option.
 
 ## Conclusion
 
-For quick, single-file conversions, **VLC** or an **online converter** will get the job done. Power users should use **FFmpeg** for its speed and quality control. If you regularly work with WebM files or need batch conversion, **iDownerGo** is the most complete desktop solution.
+For quick, single-file conversions, **VLC** or an **online converter** will get the job done. Power users should use **FFmpeg** for its speed and quality control. If you regularly work with WebM files or need batch conversion, **MassLoader** is the most complete desktop solution.

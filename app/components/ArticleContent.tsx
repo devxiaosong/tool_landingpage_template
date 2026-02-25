@@ -274,17 +274,17 @@ export default function ArticleContent({ post, relatedPosts = [] }: Props) {
               <div className="flex justify-center items-center text-xl font-bold">
                 <img
                   className="mr-5 w-[46px] h-[46px]"
-                  src="/images/logo/iDownerGo.svg"
+                  src="/images/logo/MassLoader.svg"
                   alt="logo"
                 />
-                <span className="text-[#AC32FF]">iDownerGo</span>
+                <span className="text-[#AC32FF]">MassLoader</span>
               </div>
               <div className="text-2xl font-bold mt-5 text-center">
                 Best Video Downloader
               </div>
               <div className="text-center mt-3">
                 <a
-                  href="/download/?product=idownergo.exe"
+                  href="/download/?product=massloader.exe"
                   className="inline-flex justify-center items-center text-lg text-white font-bold rounded-[10px] bg-[#AC32FF] hover:bg-[#9E1EF6] space-x-4 py-3 px-6"
                 >
                   <span>🪟</span>
@@ -294,7 +294,7 @@ export default function ArticleContent({ post, relatedPosts = [] }: Props) {
                 </a>
                 <div className="mt-3">
                   <a
-                    href="/download/?product=idownergo.dmg"
+                    href="/download/?product=massloader.dmg"
                     className="text-sm hover:underline"
                   >
                     Available for Mac &gt;&gt;

@@ -19,28 +19,28 @@ export async function generateMetadata({ params }: Props) {
   const cat = categories.find((c) => c.slug === params.category);
   if (!cat) return {};
   return {
-    title: `${cat.label} — iDownerGo Blog`,
-    description: `Browse all ${cat.label} articles and guides on iDownerGo Blog.`,
+    title: `${cat.label} — MassLoader Blog`,
+    description: `Browse all ${cat.label} articles and guides on MassLoader Blog.`,
     alternates: {
       canonical: `${BASE_URL}/blog/${params.category}/`,
     },
     openGraph: {
-      title: `${cat.label} — iDownerGo Blog`,
-      description: `Browse all ${cat.label} articles and guides on iDownerGo Blog.`,
+      title: `${cat.label} — MassLoader Blog`,
+      description: `Browse all ${cat.label} articles and guides on MassLoader Blog.`,
       url: `${BASE_URL}/blog/${params.category}/`,
       images: [
         {
           url: "/images/og-default.png",
           width: 1200,
           height: 630,
-          alt: `iDownerGo Blog — ${cat.label}`,
+          alt: `MassLoader Blog — ${cat.label}`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image" as const,
-      title: `${cat.label} — iDownerGo Blog`,
-      description: `Browse all ${cat.label} articles and guides on iDownerGo Blog.`,
+      title: `${cat.label} — MassLoader Blog`,
+      description: `Browse all ${cat.label} articles and guides on MassLoader Blog.`,
       images: [
         "/images/og-default.png",
       ],

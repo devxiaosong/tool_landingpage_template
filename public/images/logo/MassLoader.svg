@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>iDownerGo</title>
+    <title>MassLoader</title>
     <defs>
         <linearGradient x1="94.851543%" y1="94.851543%" x2="5.14844727%" y2="5.14844727%" id="linearGradient-1">
             <stop stop-color="#111111" offset="0%"></stop>
@@ -13,7 +13,7 @@
         </linearGradient>
     </defs>
     <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="iDownerGo">
+        <g id="MassLoader">
             <path d="M844,1024 L180,1024 C80.6,1024 0,943.4 0,844 L0,180 C0,80.6 80.6,0 180,0 L844,0 C943.4,0 1024,80.6 1024,180 L1024,844 C1024,943.4 943.4,1024 844,1024 Z" id="路径" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
             <g id="编组" transform="translate(182, 230)">
                 <path d="M531.134538,564 L128.865462,564 C74.8293173,564 31,520.283712 31,466.386919 L31,191.613081 C31,137.716288 74.8293173,94 128.865462,94 L531.134538,94 C585.170683,94 629,137.716288 629,191.613081 L629,466.386919 C629,520.283712 585.170683,564 531.134538,564 Z" id="路径" fill="#F96E05" fill-rule="nonzero" opacity="0.3"></path>

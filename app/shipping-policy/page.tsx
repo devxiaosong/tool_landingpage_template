@@ -4,9 +4,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Shipping Policy — iDownerGo",
+  title: "Shipping Policy — MassLoader",
   description:
-    "iDownerGo delivers registration codes digitally via email within 24 hours of purchase. No physical shipping involved. Digital products accessible worldwide.",
+    "MassLoader delivers registration codes digitally via email within 24 hours of purchase. No physical shipping involved. Digital products accessible worldwide.",
   alternates: {
     canonical: `${BASE_URL}/shipping-policy/`,
   },

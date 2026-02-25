@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 import RefundPolicyContent from "../components/RefundPolicyContent";
 
 export const metadata: Metadata = {
-  title: "Refund Policy — iDownerGo",
+  title: "Refund Policy — MassLoader",
   description:
-    "Read iDownerGo's Refund Policy. We offer a 30-day money-back guarantee. Learn about eligibility and how to request a refund.",
+    "Read MassLoader's Refund Policy. We offer a 30-day money-back guarantee. Learn about eligibility and how to request a refund.",
   alternates: {
     canonical: `${BASE_URL}/refund-policy/`,
   },

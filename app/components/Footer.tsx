@@ -9,7 +9,7 @@ const translations = {
     tutorials: "How-to Tutorials",
     tutorialsHref: "/blog/guide",
     userGuide: "User Guide",
-    userGuideHref: "/blog/guide/idownergo-video-downloader",
+    userGuideHref: "/blog/guide/massloader-video-downloader",
     support: "Support",
     supportCenter: "Support Center",
     supportCenterHref: "/support/",
@@ -23,7 +23,7 @@ const translations = {
     refundPolicy: "Refund Policy",
     cookies: "Cookies",
     shippingPolicy: "Shipping Policy",
-    copyright: "Copyright © 2026 iDownerGo Studio. All rights reserved.",
+    copyright: "Copyright © 2026 MassLoader Studio. All rights reserved.",
   },
   de: {
     slogan: "Mach dein Leben besser",
@@ -31,7 +31,7 @@ const translations = {
     tutorials: "Anleitungen",
     tutorialsHref: "/blog/guide",
     userGuide: "Benutzerhandbuch",
-    userGuideHref: "/blog/guide/idownergo-video-downloader",
+    userGuideHref: "/blog/guide/massloader-video-downloader",
     support: "Support",
     supportCenter: "Support-Center",
     supportCenterHref: "/de/support/",
@@ -45,7 +45,7 @@ const translations = {
     refundPolicy: "Rückerstattung",
     cookies: "Cookies",
     shippingPolicy: "Versandrichtlinie",
-    copyright: "Copyright © 2026 iDownerGo Studio. Alle Rechte vorbehalten.",
+    copyright: "Copyright © 2026 MassLoader Studio. Alle Rechte vorbehalten.",
   },
 };
 
@@ -82,13 +82,13 @@ export default function Footer() {
           {/* Logo & Slogan */}
           <div className="w-full md:w-1/2 lg:w-1/4 relative z-10 flex flex-col items-start md:items-center mb-8 lg:mb-0">
             <img
-              src="/images/logo/iDownerGo.svg"
-              alt="iDownerGo"
+              src="/images/logo/MassLoader.svg"
+              alt="MassLoader"
               className="w-14 h-14"
             />
             <a href="/">
               <h2 className="text-[30px] font-bold text-white mt-2">
-                iDownerGo
+                MassLoader
               </h2>
             </a>
             <p

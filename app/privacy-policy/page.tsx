@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 import PrivacyPolicyContent from "../components/PrivacyPolicyContent";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — iDownerGo",
+  title: "Privacy Policy — MassLoader",
   description:
-    "Read iDownerGo's Privacy Policy. Learn how we collect, use, and protect your personal information when you use our video downloader software.",
+    "Read MassLoader's Privacy Policy. Learn how we collect, use, and protect your personal information when you use our video downloader software.",
   alternates: {
     canonical: `${BASE_URL}/privacy-policy/`,
   },

@@ -4,9 +4,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Term Of Service — iDownerGo",
+  title: "Term Of Service — MassLoader",
   description:
-    "Read iDownerGo's Terms of Service. Understand your rights and obligations when accessing and using iDownerGo's website and software services.",
+    "Read MassLoader's Terms of Service. Understand your rights and obligations when accessing and using MassLoader's website and software services.",
   alternates: {
     canonical: `${BASE_URL}/term-of-service/`,
   },
@@ -66,13 +66,13 @@ export default function TermsOfUsePage() {
 
             <h2 className="text-xl font-bold text-gray-900 mt-8">2. Third Party Products and Services</h2>
             <p>
-              iDownerGo's websites and products may include products or services owned by third
+              MassLoader's websites and products may include products or services owned by third
               party websites. Such products or services owned by third party websites are only for
-              your convenience. iDownerGo shall not be responsible for the license restrictions and
+              your convenience. MassLoader shall not be responsible for the license restrictions and
               legality of any content of such products or services owned by third party websites.
               You might need to review and agree to applicable rules of use when using such products
               or services owned by third party websites. In addition, a link to a third party
-              website does not imply that iDownerGo endorses the site or the products or services
+              website does not imply that MassLoader endorses the site or the products or services
               referenced therein.
             </p>
 
@@ -90,7 +90,7 @@ export default function TermsOfUsePage() {
 
             <h2 className="text-xl font-bold text-gray-900 mt-8">4. TRADEMARKS</h2>
             <p>
-              iDownerGo, the iDownerGo logos, and any other product or service name or slogan
+              MassLoader, the MassLoader logos, and any other product or service name or slogan
               displayed on the Service are trademarks or registered trademarks, and may not be
               copied, imitated or used, in whole or in part, without the prior written consent and
               approval of the applicable trademark holder. All other trademarks, registered
@@ -103,7 +103,7 @@ export default function TermsOfUsePage() {
 
             <h2 className="text-xl font-bold text-gray-900 mt-8">5. OWNERSHIP AND INTELLECTUAL PROPERTY RIGHTS</h2>
             <p>
-              iDownerGo own and/or the authorized user of all right, title, and interest, patents,
+              MassLoader own and/or the authorized user of all right, title, and interest, patents,
               designs, including all intellectual property rights, in and to the Services, and any
               services made available in connection with the Service provided to you and we reserve
               the right to revoke the use of license granted to you. Except for those rights
@@ -112,12 +112,12 @@ export default function TermsOfUsePage() {
               Service or any third party services or content except as expressly permitted hereunder
               is prohibited without the prior written consent of the relevant rights holders. You
               accept that you shall not at any point in time question or dispute the legal ownership
-              of these properties with iDownerGo.
+              of these properties with MassLoader.
             </p>
 
             <h2 className="text-xl font-bold text-gray-900 mt-8">6. INDEMNIFICATION</h2>
             <p>
-              You will defend, indemnify and hold harmless iDownerGo, its subsidiaries, affiliates,
+              You will defend, indemnify and hold harmless MassLoader, its subsidiaries, affiliates,
               partners and third-party advertisers and their respective directors, officers, agents,
               employees, licensors, and suppliers from and against any costs, damages, expenses, and
               liabilities (including, but not limited to, reasonable attorneys' fees) arising out of

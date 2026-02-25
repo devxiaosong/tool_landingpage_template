@@ -1,39 +1,39 @@
 ---
-title: "Getting Start of iDownerGo Video Downloader – User Guide"
-excerpt: "iDownerGo Video Downloader is a powerful tool designed for downloading videos from a wide array of websites. With support for over 10,000 sites and the ability to download videos in HD and up to 8K resolution, this guide will walk you through installation, use, and advanced features."
-author: "iDownerGo"
-authorBio: "Provide detailed tutorials on how to use iDownerGo for various video/music download tasks."
+title: "Getting Start of MassLoader Video Downloader – User Guide"
+excerpt: "MassLoader Video Downloader is a powerful tool designed for downloading videos from a wide array of websites. With support for over 10,000 sites and the ability to download videos in HD and up to 8K resolution, this guide will walk you through installation, use, and advanced features."
+author: "MassLoader"
+authorBio: "Provide detailed tutorials on how to use MassLoader for various video/music download tasks."
 avatar: "/images/uploads/avatar-matthew.jpg"
 date: "2024-09-18"
 categoryLabel: "Guide"
 coverImage: "/images/onlyfans-downloader/header-bg.png"
 ---
 
-iDownerGo Video Downloader is a powerful tool designed for downloading videos from a wide array of websites. With support for over 10,000 sites and the ability to download videos in HD and up to 8K resolution, iDownerGo offers features that cater to both casual users and professionals. This guide will walk you through the installation, use, and advanced features of iDownerGo to help you get the most out of your video downloading experience.
+MassLoader Video Downloader is a powerful tool designed for downloading videos from a wide array of websites. With support for over 10,000 sites and the ability to download videos in HD and up to 8K resolution, MassLoader offers features that cater to both casual users and professionals. This guide will walk you through the installation, use, and advanced features of MassLoader to help you get the most out of your video downloading experience.
 
-## Download and Install iDownerGo Video Downloader
+## Download and Install MassLoader Video Downloader
 
 ### Step 1: Visit the Official Website
 
-Go to iDownerGo's official website to download the installer for your operating system.
+Go to MassLoader's official website to download the installer for your operating system.
 
 ### Step 2: Download the Installer
 
 Click on the download button suitable for your OS (Windows, macOS, etc.). The file will be downloaded to your computer.
 
-### Step 3: Install iDownerGo
+### Step 3: Install MassLoader
 
-Open the downloaded file and follow the on-screen instructions to install iDownerGo on your device. The installation process is straightforward and typically involves agreeing to the terms of service and selecting an installation directory.
+Open the downloaded file and follow the on-screen instructions to install MassLoader on your device. The installation process is straightforward and typically involves agreeing to the terms of service and selecting an installation directory.
 
 ### Step 4: Launch the Application
 
-Once installed, open iDownerGo from your applications folder or desktop shortcut.
+Once installed, open MassLoader from your applications folder or desktop shortcut.
 
-> **Register and Update:** With the free trial version of iDownerGo Video Downloader, you only have a limited number of downloads. If you want to enjoy the full function of this software, you have to register your account first. If you already have a license code, click on the **"Register"** button on the top of the interface to enter the registration window.
+> **Register and Update:** With the free trial version of MassLoader Video Downloader, you only have a limited number of downloads. If you want to enjoy the full function of this software, you have to register your account first. If you already have a license code, click on the **"Register"** button on the top of the interface to enter the registration window.
 
 ---
 
-## How to Use the iDownerGo Download Function
+## How to Use the MassLoader Download Function
 
 ### How to Download Video from YouTube
 
@@ -43,11 +43,11 @@ Navigate to YouTube.com and locate the video you want to download. Copy its URL 
 
 **Step 2: Set the Output Format**
 
-Click the **"Settings"** button in the top right corner of the iDownerGo interface. In the Preferences window, go to the **"Download"** section. Here, you can select whether you want the file as video or audio, pick the quality, and choose where to save it. Videos are saved as MP4 by default.
+Click the **"Settings"** button in the top right corner of the MassLoader interface. In the Preferences window, go to the **"Download"** section. Here, you can select whether you want the file as video or audio, pick the quality, and choose where to save it. Videos are saved as MP4 by default.
 
 **Step 3: Paste the Copied URL**
 
-In iDownerGo, you don't need to manually paste the video URL. Simply click the **"Paste URL"** button, and the software will automatically analyze the video.
+In MassLoader, you don't need to manually paste the video URL. Simply click the **"Paste URL"** button, and the software will automatically analyze the video.
 
 **Step 4: Download the YouTube Video**
 
@@ -59,7 +59,7 @@ After the analysis is complete, the download will start automatically. The video
 
 **Step 1: Open the Batch Download Option**
 
-In iDownerGo, locate the drop-down menu next to the **"Paste URL"** button.
+In MassLoader, locate the drop-down menu next to the **"Paste URL"** button.
 
 **Step 2: Select "Multiple URLs"**
 
@@ -71,7 +71,7 @@ A blank text box will appear. Copy the URLs of the videos you want to download f
 
 **Step 4: Start the Download Process**
 
-After pasting all the URLs, click the **"Download"** button. iDownerGo will begin downloading all the videos simultaneously.
+After pasting all the URLs, click the **"Download"** button. MassLoader will begin downloading all the videos simultaneously.
 
 ---
 
@@ -81,27 +81,27 @@ After pasting all the URLs, click the **"Download"** button. iDownerGo will begi
 
 Visit the site and locate the playlist you wish to download. Copy the playlist's URL from the address bar of your browser.
 
-**Step 2: Paste the Playlist URL into iDownerGo**
+**Step 2: Paste the Playlist URL into MassLoader**
 
-Open iDownerGo. If you're downloading from YouTube, paste the playlist URL into the input field, and iDownerGo will automatically find and analyze it. For Bilibili, first select **"Download Playlist"** from the drop-down menu before pasting the URL.
+Open MassLoader. If you're downloading from YouTube, paste the playlist URL into the input field, and MassLoader will automatically find and analyze it. For Bilibili, first select **"Download Playlist"** from the drop-down menu before pasting the URL.
 
 **Step 3: Select Videos and Set Output Options**
 
-After iDownerGo analyzes the playlist, a window will appear showing all the videos. You can choose which specific videos to download or select the option to download the entire playlist. You can also pick the output format (MP4 or MP3) and set the quality.
+After MassLoader analyzes the playlist, a window will appear showing all the videos. You can choose which specific videos to download or select the option to download the entire playlist. You can also pick the output format (MP4 or MP3) and set the quality.
 
 **Step 4: Confirm and Download**
 
-After making your selections, click the **"OK"** button to confirm. iDownerGo will start downloading the videos and save them to the folder you specified.
+After making your selections, click the **"OK"** button to confirm. MassLoader will start downloading the videos and save them to the folder you specified.
 
 ---
 
-## How to Use iDownerGo Online Function
+## How to Use MassLoader Online Function
 
 ### How to Download Videos Online
 
 **Step 1: Access the Online Section**
 
-Open iDownerGo and click the **"Online"** option on the left side. Select the website you want to download from, like YouTube, or enter a URL into the built-in browser.
+Open MassLoader and click the **"Online"** option on the left side. Select the website you want to download from, like YouTube, or enter a URL into the built-in browser.
 
 **Step 2: Set Output Format and Quality**
 
@@ -119,11 +119,11 @@ The download will begin automatically. Monitor its progress in the **"Downloadin
 
 ### How to Crop Video from YouTube Online
 
-If you want to trim a YouTube video to keep only the important parts, you can use iDownerGo's online function. This feature works only for YouTube videos.
+If you want to trim a YouTube video to keep only the important parts, you can use MassLoader's online function. This feature works only for YouTube videos.
 
 **Step 1: Play the YouTube Video**
 
-In the Online Section of iDownerGo, use the built-in browser to navigate to YouTube and play the video you want to trim.
+In the Online Section of MassLoader, use the built-in browser to navigate to YouTube and play the video you want to trim.
 
 **Step 2: Set the Time Duration**
 
@@ -139,11 +139,11 @@ The trimmed portion will automatically download and will be available in the **"
 
 ---
 
-## How to Use iDownerGo Convert Function
+## How to Use MassLoader Convert Function
 
 **Step 1: Add a File**
 
-Click the **"+"** button to upload your audio or video file from your computer to iDownerGo.
+Click the **"+"** button to upload your audio or video file from your computer to MassLoader.
 
 **Step 2: Choose Format and Quality**
 
@@ -176,11 +176,11 @@ In the Preferences under Connection Options, you can also use an in-app proxy. C
 
 ### 3. Pause or Resume the Downloading Files
 
-In iDownerGo, you can pause a download by clicking the **"Pause"** button. To stop all downloads at once, click the **"Pause All"** button in the top-right corner. To continue downloading, click the **"Resume"** button.
+In MassLoader, you can pause a download by clicking the **"Pause"** button. To stop all downloads at once, click the **"Pause All"** button in the top-right corner. To continue downloading, click the **"Resume"** button.
 
 ### 4. Protect Your Video Privacy
 
-iDownerGo offers a private video mode to keep your videos and music files secure in a password-protected folder.
+MassLoader offers a private video mode to keep your videos and music files secure in a password-protected folder.
 
 - Go to the **"Downloaded"** section and right-click on the video you want to protect.
 - Select **"Move to Private List"** from the options.
@@ -189,10 +189,10 @@ iDownerGo offers a private video mode to keep your videos and music files secure
 
 ### 5. Change Interface Language
 
-iDownerGo supports various languages, such as English, Chinese, Italian, and French. To change the language, click the three-line menu button in the top-right corner, select the **"Languages"** tab, and choose your preferred language from the list.
+MassLoader supports various languages, such as English, Chinese, Italian, and French. To change the language, click the three-line menu button in the top-right corner, select the **"Languages"** tab, and choose your preferred language from the list.
 
 ---
 
 ## Conclusion
 
-iDownerGo Video Downloader is highly recommended for anyone seeking an efficient tool for downloading and managing videos. Its comprehensive capabilities ensure a smooth and effective video management experience, making it an excellent option for any download requirements.
+MassLoader Video Downloader is highly recommended for anyone seeking an efficient tool for downloading and managing videos. Its comprehensive capabilities ensure a smooth and effective video management experience, making it an excellent option for any download requirements.

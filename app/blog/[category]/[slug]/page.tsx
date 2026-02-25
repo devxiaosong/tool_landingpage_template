@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props) {
   const ogImage = post.coverImage ||
     "/images/og-default.png";
   return {
-    title: `${post.title} — iDownerGo Blog`,
+    title: `${post.title} — MassLoader Blog`,
     description: post.excerpt,
     alternates: {
       canonical: `${BASE_URL}/blog/${params.category}/${params.slug}/`,

@@ -12,18 +12,18 @@ Calimove is known for its professional fitness and calisthenics tutorial videos.
 
 In this guide, we'll cover the two most reliable methods for downloading Calimove content.
 
-## Method 1: iDownerGo Desktop App
+## Method 1: MassLoader Desktop App
 
-iDownerGo is the most efficient solution for downloading Calimove content at full quality. Its built-in browser allows you to log into your Calimove account and download videos directly.
+MassLoader is the most efficient solution for downloading Calimove content at full quality. Its built-in browser allows you to log into your Calimove account and download videos directly.
 
 **Steps:**
 
-1. Download and install iDownerGo on your Windows or Mac computer
-2. Open iDownerGo — it includes a built-in browser
+1. Download and install MassLoader on your Windows or Mac computer
+2. Open MassLoader — it includes a built-in browser
 3. Navigate to **calimove.com** using the built-in browser
 4. Log in to your Calimove account with your credentials
 5. Find and play the video you want to download
-6. iDownerGo automatically detects the video stream and adds it to the download queue
+6. MassLoader automatically detects the video stream and adds it to the download queue
 7. Click **Download All** to start the download process
 
 **✅ Pros:**
@@ -73,8 +73,8 @@ Alternatively, **OBS Studio** (free, open source) provides more control over rec
 
 ## Which Method is Best?
 
-For the highest quality and most convenient experience, **iDownerGo** is the clear winner. It downloads the original video stream directly, giving you full quality without any screen recording artifacts.
+For the highest quality and most convenient experience, **MassLoader** is the clear winner. It downloads the original video stream directly, giving you full quality without any screen recording artifacts.
 
 **Screen recording** works as a universal backup when direct download isn't possible, but the quality won't match the original stream.
 
-If you're a serious Calimove user who regularly saves workout videos for offline training, iDownerGo's batch download feature will save you significant time compared to recording each video individually.
+If you're a serious Calimove user who regularly saves workout videos for offline training, MassLoader's batch download feature will save you significant time compared to recording each video individually.

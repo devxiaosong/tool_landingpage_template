@@ -4,9 +4,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Cookie Policy — iDownerGo",
+  title: "Cookie Policy — MassLoader",
   description:
-    "Learn how iDownerGo uses cookies, web beacons and similar technologies on our website and mobile app. Find out how to manage or block cookies in your browser.",
+    "Learn how MassLoader uses cookies, web beacons and similar technologies on our website and mobile app. Find out how to manage or block cookies in your browser.",
   alternates: {
     canonical: `${BASE_URL}/cookie-policy/`,
   },
@@ -62,13 +62,13 @@ export default function CookiesPage() {
               from your computer or device after you close the browser. Persistent cookies will
               remain stored till they are deleted or reach the expiry date. Please note if you
               delete or choose not to accept the cookies, you may not be able to utilize the
-              features of iDownerGo products and services to their fullest potential.
+              features of MassLoader products and services to their fullest potential.
             </p>
             <p>
               We may also use third-party cookies sometimes. For example, we use Google Analytics
-              to accomplish some analysis work. iDownerGo does not process or respond to the web
+              to accomplish some analysis work. MassLoader does not process or respond to the web
               browser DNT (Do Not Track) signal or other similar transmissions that indicate to
-              disable online tracking of users who use iDownerGo products and services.
+              disable online tracking of users who use MassLoader products and services.
             </p>
             <p>
               Google Analytics is a web analytics service offered by Google Inc. to help track and

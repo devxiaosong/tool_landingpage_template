@@ -11,7 +11,7 @@ export default function ArticleHeroBanner() {
       >
         {/* Left Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <p className="text-2xl leading-7">iDownerGo Downloader</p>
+          <p className="text-2xl leading-7">MassLoader Downloader</p>
           
           <p className="text-3xl md:text-4xl leading-10 md:leading-[42px] font-bold mt-3">
             Download Video, Audio from 10,000+ Websites
@@ -36,7 +36,7 @@ export default function ArticleHeroBanner() {
             {/* Windows Button */}
             <div className="grid grid-cols-1 gap-7 justify-center lg:justify-start">
               <a 
-                href="/download/?product=idownergo.exe" 
+                href="/download/?product=massloader.exe" 
                 target="_blank"
                 className="inline-flex justify-center items-center text-lg text-white font-bold rounded-[10px] bg-[#AC32FF] hover:bg-[#9E1EF6] space-x-4 py-[15px] w-[264px]"
               >
@@ -54,7 +54,7 @@ export default function ArticleHeroBanner() {
             {/* Mac Button */}
             <div className="grid grid-cols-1 gap-7 justify-center lg:justify-start">
               <a 
-                href="/download/?product=idownergo.dmg" 
+                href="/download/?product=massloader.dmg" 
                 target="_blank"
                 className="inline-flex justify-center items-center text-lg text-white font-bold rounded-[10px] bg-[#AC32FF] hover:bg-[#9E1EF6] space-x-4 py-[15px] w-[264px]"
               >

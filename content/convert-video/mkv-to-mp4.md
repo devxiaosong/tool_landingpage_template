@@ -12,13 +12,13 @@ MKV (Matroska Video) is a flexible container format that can store multiple vide
 
 Converting MKV to MP4 solves this problem instantly. Here are 5 free and reliable methods.
 
-## Method 1: iDownerGo — Fastest with Batch Support
+## Method 1: MassLoader — Fastest with Batch Support
 
-iDownerGo handles MKV to MP4 conversion with no quality loss, and supports batch processing so you can convert multiple files at once.
+MassLoader handles MKV to MP4 conversion with no quality loss, and supports batch processing so you can convert multiple files at once.
 
 **Steps:**
 
-1. Open iDownerGo and go to the **Convert** tab
+1. Open MassLoader and go to the **Convert** tab
 2. Click **Add Files** and select one or more `.mkv` files
 3. Set the output format to **MP4**
 4. Choose your preferred quality setting (original, 1080p, 720p)
@@ -110,4 +110,4 @@ If subtitles are important, use HandBrake or FFmpeg for the best results.
 
 ## Conclusion
 
-For most users, **VLC** or an **online converter** will handle simple MKV to MP4 conversions with minimal effort. For batch conversions or working with downloaded content, **iDownerGo** is the most efficient choice. Advanced users should use **FFmpeg** for the fastest, lossless conversion.
+For most users, **VLC** or an **online converter** will handle simple MKV to MP4 conversions with minimal effort. For batch conversions or working with downloaded content, **MassLoader** is the most efficient choice. Advanced users should use **FFmpeg** for the fastest, lossless conversion.

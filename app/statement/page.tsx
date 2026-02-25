@@ -4,9 +4,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Statement — iDownerGo",
+  title: "Statement — MassLoader",
   description:
-    "iDownerGo is for personal use only and should not be used for sharing or pirating. Please comply with the terms of service and enjoy your paid content responsibly.",
+    "MassLoader is for personal use only and should not be used for sharing or pirating. Please comply with the terms of service and enjoy your paid content responsibly.",
   alternates: {
     canonical: `${BASE_URL}/statement/`,
   },
@@ -41,19 +41,19 @@ export default function StatementPage() {
         <div className="container mx-auto max-w-[860px] px-4">
           <div className="prose prose-lg max-w-none text-gray-700 leading-8 space-y-6">
             <p>
-              iDownerGo allows you to download your favorite shows and watch
+              MassLoader allows you to download your favorite shows and watch
               streaming videos offline anytime, anywhere. In this way, it
               overcomes problems such as poor network quality limitations.
             </p>
             <p>
-              However, please be aware that iDownerGo is for personal use only
-              and should not be used for sharing or pirating. iDownerGo does not
+              However, please be aware that MassLoader is for personal use only
+              and should not be used for sharing or pirating. MassLoader does not
               support any piracy or commercial sharing actions. Sharing content
               outside of your household can lead to account banning and other
               legal risks.
             </p>
             <p>
-              When using iDownerGo software, every person should have their own
+              When using MassLoader software, every person should have their own
               relevant streaming account and downloader license. Please comply
               with the terms of service and enjoy your paid content responsibly.
             </p>
