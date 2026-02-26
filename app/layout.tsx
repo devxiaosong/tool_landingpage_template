@@ -33,6 +33,9 @@ export const metadata: Metadata = {
       "/images/og-default.png",
     ],
   },
+  verification: {
+    google: "Dwo9AIBGROv1P2p7BxptuxAH_Hx7LL6lGp_CM-9MuUA",
+  },
 };
 
 export default function RootLayout({
